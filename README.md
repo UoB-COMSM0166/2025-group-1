@@ -27,6 +27,8 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 Our group's idea for the game was inspired by the game Spelunky, which is in the rougue-like game genre and takes place in a cave where the player must explore. The game has a lot of richness and randomized gameplay variations, and the gold or gems earned from each level can be exchanged at the store. Though we have made certain changes and will be expanding the gameplay by allowing the player to decrypt and piece together the main plot, our group's gaming mechanics are comparable to those of a rouguelike. Our game has an inventive twist because it is set in a future, deserted laboratory. Additionally, a few minor elements like partial lighting might encourage players to explore the terrain more, and certain function keys would enhance the game's playability.
 
+Paper Prototype(https://raw.githubusercontent.com/UoB-COMSM0166/2025-group-1/main/Two-paper-prototype-ideas/Video2.mp4)
+
 - 5% ~250 words 
 - Describe your game, what is based on, what makes it novel? 
 
