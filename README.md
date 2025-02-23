@@ -14,12 +14,15 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 ![f39cc4e1d8b6dd73d4d2db40f5900f1](https://github.com/user-attachments/assets/c3ffb7cf-7c44-414e-b030-84610f4f36cd)
 
 
-- Group member 1, name, email, role
-- Group member 2, name, email, role
-- Group member 3, name, email, role
-- Group member 4, name, email, role
-- Group member 5, name, email, role
-- Group member 5, name, email, role
+| MEMBER | NAME           | EMAIL                        | ROLE |
+|--------|---------------|------------------------------|------|
+| 1      | Peiru Li      | xb24597@bristol.ac.uk        |      |
+| 2      | Qingya Fu     | zn24533@bristol.ac.uk        |      |
+| 3      | Songying Li   | fm24830@bristol.ac.uk        |      |
+| 4      | Jiaduo Gu     | wi24623@bristol.ac.uk        |      |
+| 5      | Hanqi Wu      | to24657@bristol.ac.uk        |      |
+| 6      | Hanzhen Guo   | om24630@bristol.ac.uk        |      |
+
 
 ## Project Report
 
