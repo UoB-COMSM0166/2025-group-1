@@ -34,8 +34,18 @@ Paper Prototype(https://raw.githubusercontent.com/UoB-COMSM0166/2025-group-1/mai
 
 ### Requirements 
 
-- 15% ~750 words
-- Use case diagrams, user stories. Early stages design. Ideation process. How did you decide as a team what to develop? 
+- Use case diagrams, user stories. Early stages design. Ideation process. How did you decide as a team what to develop?
+  
+#### User stories
+| Stakeholder               | Epic                                                  | User Story                                                                                                                                         | Acceptance Criteria                                                                                                                                   |
+|---------------------------|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Narrative-Driven Players**  | Unlockable Plot Experience                         | As a player, I want to unlock storylines by completing quests so that I can get a deeper experience of the storyline.                           | Given that I have completed a mission, When I click the “Finish” button, Then a new story segment should be displayed.                               |
+| **Exploratory Players**     | Realisation of the Dynamic Lighting System         | As a player, I want to explore dungeon rooms in darkness to experience the joy of the unknown.                                                  | Given that I am present in the game scene, When I move around the scene, Then the light source should follow me, creating real-time lighting updates. |
+| **Novice Players**          | Intuitive and responsive interface for a smooth gaming experience | As a player, I expected the menu to be clearly designed so that I can easily get started without any extra help when I launch the game for the first time. | Given an intuitive and user-friendly menu interface, When I launch the game for the first time, Then I can easily understand how to start playing.   |
+| **Amblyopia Players**       | Enhanced screen contrast for a clear and hassle-free gaming experience | As a player, I want to enhance the contrast of the screen so that I can clearly recognize everything in the game and have a more comfortable gaming experience. | Given that the visual setting to enhance the contrast of the screen is enabled, When I start the game as a partially sighted player, Then I can clearly distinguish all key elements of the game. |
+| **Gameplay Programmer**     | Player vs Enemy Combat System Features             | As a developer, I want to implement a player vs enemy combat system, so that players can engage in battles with different enemy types.           | Given that there are various enemy types in the game scene (such as melee enemies, ranged enemies, and bosses), When the player engages in combat, Then each enemy should display unique attack styles, movement behaviors, and health attributes. |
+| **Art Designers**            | Attracting the attention of potential players      | As a developer, I want to design a series of posters that match the theme of the game, so that it can attract potential players during the promotion period. | Given the game has a clear theme and visual style, When the designed posters are showcased during the promotion period, Then each poster should align with the game's theme and effectively capture potential players' attention. |
+
 
 ### Design
 
