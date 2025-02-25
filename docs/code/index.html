@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- p5.js 核心库 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  
+  <!-- 全局变量需要最先加载 -->
+  <script src="globals.js"></script>
+
+  <!-- 类定义（注意依赖顺序） -->
+  <script src="classes/Animation.js"></script>
+  <script src="classes/Entity.js"></script>
+  <script src="classes/Platform.js"></script>
+  <script src="classes/Bullet.js"></script>
+  <script src="classes/Enemy.js"></script>
+  <script src="classes/Player.js"></script>
+  <script src="classes/StoryFragment.js"></script>
+
+  <!-- 系统模块 -->
+  <script src="systems/initializeGame.js"></script>
+  <script src="systems/lightEffect.js"></script>
+  <script src="systems/ui.js"></script>
+  <script src="systems/menu.js"></script>
+  <script src="systems/levelManager.js"></script>
+  <script src="systems/portalSystem.js"></script>
+  
+  <script src="levels/level1.js"></script>
+  <script src="levels/level2.js"></script>
+  
+
+  <!-- 主程序最后加载 -->
+  <script src="main.js"></script>
+</head>
+<body></body>
+</html>
