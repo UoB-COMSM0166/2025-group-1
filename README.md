@@ -26,7 +26,7 @@ Include a demo video of your game here (you don't have to wait until the end, yo
 
 ## Project Report
 
-### Introduction
+## 2.Introduction
 
 Our group's idea for the game was inspired by the game Spelunky, which is in the rougue-like game genre and takes place in a cave where the player must explore. The game has a lot of richness and randomized gameplay variations, and the gold or gems earned from each level can be exchanged at the store. Though we have made certain changes and will be expanding the gameplay by allowing the player to decrypt and piece together the main plot, our group's gaming mechanics are comparable to those of a rouguelike. Our game has an inventive twist because it is set in a future, deserted laboratory. Additionally, a few minor elements like partial lighting might encourage players to explore the terrain more, and certain function keys would enhance the game's playability.
 
@@ -35,11 +35,30 @@ Paper Prototype(https://raw.githubusercontent.com/UoB-COMSM0166/2025-group-1/mai
 - 5% ~250 words 
 - Describe your game, what is based on, what makes it novel? 
 
-### Requirements 
+## 3.Requirements 
 
-- Use case diagrams, user stories. Early stages design. Ideation process. How did you decide as a team what to develop?
-  
-#### User stories
+### Ideation process
+
+In the first week of game development, our team researched outstanding cases from previous years and familiarized ourselves with the entire development process. To refine potential game ideas, we held a discussion meeting in the middle of the week. Prior to this, the six team members divided tasks based on their personal interests, gaming experience, and professional skills. Among them, four members with extensive gaming experience proposed five game concepts and explored potential expansions. The games we considered included Overcooked 2, Worms, Zero Sievert, Plague Inc., and Carrot Fantasy. 
+
+During the discussion, we thoroughly analyzed each game's core mechanics, potential development challenges, feasibility, and rationality. Meanwhile, the remaining two members compiled the strengths and weaknesses of various successful cases and shared their findings in a document during the meeting. In the end, we documented our game ideas and discussion results from the first week.
+
+
+| Game Type | Game Prototypes | Game Description | Added Idea Points | Possible Challenges |
+|-----------|----------------|------------------|-------------------|---------------------|
+| **Multiplayer / Casual Party / Simulation** | **Overcooked! 2** | Players take on the role of a chef and work with their teammates to cook food, fulfill orders, and earn high scores in a variety of challenging and chaotic kitchens within a set time limit! | (1) Setting up a character to interfere with the cooking process, such as a mouse. <br> (2) Setting up a character to help the player cut vegetables. <br> (3) Set up a gold coin shop to upgrade cooking utensils to increase the cooking speed or delay the time for guests, etc. | (1) Insufficient Game Content <br> (2) Balance Between Randomness and Difficulty <br> (3) Lack of Rewards and Long-Term Goals <br> (4) Multiplayer mode adds complexity to the code |
+| **Strategy Simulation / Infectious Disease Simulation / Placement Strategy** | **Plague Inc.** | Players need to design and evolve deadly pathogens to spread globally by mutating transmission routes, symptoms and resistance to drugs, while countering national anti-epidemic measures, and ultimately succeeding in infecting and wiping out the human race. | (1) Improvement of the story background: changed to science fiction theme, the story background is moved to a new planet. <br> (2) Putting obstacles in the way of the human research process, such as the infection rate of more than 80%, the speed of antidote development decreased. <br> (3) Propagation path: changed from the original version of the Earth’s aircraft and ships to space warships. | (1) Data aspects: <br> &emsp; A. Infection rate arithmetic, etc. <br> &emsp; B. Adjustments to antidote generation - related to changes in infection rates. <br> &emsp; C. Increased transmission routes. <br> (2) Text volume: tasks such as news doohickey require a lot of imagination and too much text. |
+| **Turn-based Strategy / Ballistic Shooting / Casual Battle** | **Worms** | Players take control of a unit of hilarious and cranky little bugs and use a variety of weapons (bazookas, grenades, kamikazes, etc.) to engage their opponents in turn-based battles, with the goal of destroying all enemy bugs using precision shooting and tactical maneuvers. | (1) Defeat enemies to drop props or blood packs. <br> (2) Levels feature a countdown timer, a screen that shrinks as time progresses, or a mysterious threat that forces the player to move forward quickly. | (1) Enemy AI tracking <br> (2) Terrain destruction caused by multiple weapons <br> (3) As the player moves, the screen view follows (real-time tracking of camera). |
+| **Overhead Survival Shooter / Exploration Scavenging / Doomsday Survival** | **Zero Sievert** | Players scavenge for supplies, fight to survive in randomly generated wasteland war zones, and use gun modifications and base management to enhance their combat power against hostile forces and mutated monsters. | No better ideas at the moment, not enough room for improvement | (1) Random movement track of monsters <br> (2) As the player moves, the screen view follows (real-time tracking of camera). |
+| **Tower Defence / Casual Strategy** | **Carrot Fantasy** | Players need to build turrets in the level to block the incoming monsters and protect the radish from being eaten! | No better ideas at the moment, not enough room for improvement | — |
+| **Roguelike / Platform Adventure / Action Quest** | **Spelunky** | Players control explorers as they search for treasure, avoid traps, defeat enemies, and try to survive in randomly generated underground caves. The game combines high-freedom exploration, hardcore platform jumping, and a permanent death mechanic, where every challenge is full of unknowns, testing players’ strategy and reflexes. | (1) Combined with exploration mode by adding localized lighting effects. <br> (2) Adding hidden paths or spaces and presenting them as environmental cues. <br> (3) Adding a portal mechanism. <br> (4) Create a story background for the game and present it in the form of decryption. | (1) **Technical Challenges**: Procedural generation must ensure that random maps are both playable and balanced. <br> (2) **Collision Detection**: It requires optimization for smoother gameplay. <br> (3) **Content Expansion**: Introducing new features, boss battles, and buff mechanisms, along with diverse environments, can keep gameplay fresh. |
+
+Moving into the second week, team members played each candidate game to gain a deeper understanding of their core mechanics, followed by another discussion session. After intense deliberation, we decided to develop a game that preserves the characteristics of the original while significantly enhancing its fun factor with minimal yet impactful new mechanics. The game also needed to have strong potential for innovation and engaging conflicts. Ultimately, we chose Spelunky as our prototype—a classic roguelike game. Building on its core features, we plan to introduce an exploration mode, integrating localized lighting mechanics and puzzle-solving elements to create a brand-new game concept. The team unanimously agreed on this idea and finalized it as our development direction.
+
+
+ 
+### User stories
+
 | Stakeholder               | Epic                                                  | User Story                                                                                                                                         | Acceptance Criteria                                                                                                                                   |
 |---------------------------|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Narrative-Driven Players**  | Unlockable Plot Experience                         | As a player, I want to unlock storylines by completing quests so that I can get a deeper experience of the storyline.                           | Given that I have completed a mission, When I click the “Finish” button, Then a new story segment should be displayed.                               |
