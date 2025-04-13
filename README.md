@@ -69,6 +69,19 @@ Moving into the second week, team members played each candidate game to gain a d
 | **Art Designers**            | Attracting the attention of potential players      | As a developer, I want to design a series of posters that match the theme of the game, so that it can attract potential players during the promotion period. | Given the game has a clear theme and visual style, When the designed posters are showcased during the promotion period, Then each poster should align with the game's theme and effectively capture potential players' attention. |
 
 
+# 关于游戏的隐私性
+
+An analysis of the source code of a game built with the p5.js framework reveals several concerning aspects related to user privacy. Notably, in the `setup()` function, the game retrieves user sound preferences using `localStorage.getItem("sound")`, and within the `drawToggle()` function, it updates these preferences in real-time through `localStorage.setItem("sound", newValue)`. While this approach enhances user experience by remembering previous settings, it simultaneously reflects a lack of transparency and informed consent. Nowhere in the code is there a prompt, explanation, or privacy policy informing players that their data is being stored, even if only locally. The design implicitly assumes user consent—an ethically questionable stance, particularly as digital privacy awareness grows globally.
+
+Moreover, the settings interface (as implemented in `drawSettingMenu()`, `drawSlider()`, and related functions) includes user-adjustable controls for sound, brightness, and contrast. These interfaces could have served as key touchpoints for communicating data handling practices or offering control over data persistence. However, there is no functionality allowing users to delete their stored data or opt out of persistent storage altogether. This one-way storage model effectively removes player agency over their own data. Although localStorage is considered relatively benign in terms of risk, its usage without context still contributes to an erosion of privacy standards—particularly when scaled or combined with additional tracking elements.
+
+Additionally, the game lacks mechanisms for handling user profiles or login sessions, yet still records behavioral preferences persistently. This suggests a dissonance between the simplicity of the game’s offline structure and its silent yet permanent data tracking practices. If future iterations of the game were to incorporate multiplayer features, cloud saves, or analytics tools, the current architecture would become problematic, potentially violating data protection laws such as the General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA).
+
+Critically, this case study reflects a broader issue in small- to mid-scale game development: privacy is often deprioritized in favor of functionality and aesthetics. Developers may unintentionally introduce privacy risks simply by failing to implement basic data governance measures. By adopting principles such as data minimization, user consent, and transparency early in the design phase, developers can create experiences that are not only enjoyable but also ethically sound. Respecting user privacy should not be treated as an afterthought, but as a central tenet of responsible game design in the digital era.
+
+
+
+
 ### Design
 
 - 15% ~750 words 
