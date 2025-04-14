@@ -69,6 +69,25 @@ Moving into the second week, team members played each candidate game to gain a d
 | **Art Designers**            | Attracting the attention of potential players      | As a developer, I want to design a series of posters that match the theme of the game, so that it can attract potential players during the promotion period. | Given the game has a clear theme and visual style, When the designed posters are showcased during the promotion period, Then each poster should align with the game's theme and effectively capture potential players' attention. |
 
 
+## Inclusive Game Accessibility Design: Empowering Every Player
+
+Our 2D platform shooting game is designed with the belief that games should be accessible to all, regardless of physical, sensory, or cognitive ability. Rooted in the principles of digital accessibility, our design is guided by WCAG standards, the “two golden rules” of accessibility (keyboard navigation and screen reader compatibility), and Tim Berners-Lee’s ethos of universal access.
+
+A key feature of our accessibility approach is the auto-aiming mode, triggered by holding the Shift key, which causes the player’s weapon to rotate automatically in a 360-degree loop. This eliminates the need for precise directional inputs or mouse control, allowing players to lock aim and fire using only the Space key. This system supports one-handed gameplay and mouse-free operation, providing a more inclusive experience for players with limited motor functions.
+
+In standard mode, players can jump using either W or Space, offering flexible control schemes. This dual mapping ensures that users with different physical abilities can perform critical actions comfortably.
+
+We have implemented a high-contrast visual mode tailored for players with low vision or color blindness, using bold color separation and clear outlines to improve visibility of game elements. This mode ensures better readability of in-game interfaces such as the HUD, player character, obstacles, and navigation cues.
+
+While full screen reader and blind player support is not yet implemented, we have begun exploring future enhancements to better serve blind and visually impaired players. For example, we plan to incorporate audio feedback cues (e.g., rhythmic tones for aiming rotation, distinct sounds for jump, shooting, and exit proximity), and ARIA live regions to support screen reader announcements of gameplay events. Our HTML5 canvas interface is structured with semantic labels and regions in anticipation of such features. These are part of our roadmap to ensure screen reader compatibility and meaningful feedback for non-visual play.
+
+We also aim to support players with severe physical disabilities, including those unable to use their hands, by researching voice command systems (using Web Speech API), eye-tracking controls, and single-switch scanning interfaces. These technologies, while complex, are critical to our long-term vision of universal accessibility.
+
+From development to deployment, accessibility is woven into our game’s DNA—not as an add-on, but as a foundational philosophy. By implementing features like customizable key bindings, one-handed control schemes, and visual contrast options, we are laying the groundwork for a game that welcomes all. We recognize that accessibility is an ongoing process, and our commitment is to iterate, test with real users, and expand support to reflect the diverse needs of the player community.
+
+
+
+
 # 关于游戏的隐私性
 
 An analysis of the source code of a game built with the p5.js framework reveals several concerning aspects related to user privacy. Notably, in the `setup()` function, the game retrieves user sound preferences using `localStorage.getItem("sound")`, and within the `drawToggle()` function, it updates these preferences in real-time through `localStorage.setItem("sound", newValue)`. While this approach enhances user experience by remembering previous settings, it simultaneously reflects a lack of transparency and informed consent. Nowhere in the code is there a prompt, explanation, or privacy policy informing players that their data is being stored, even if only locally. The design implicitly assumes user consent—an ethically questionable stance, particularly as digital privacy awareness grows globally.
