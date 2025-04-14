@@ -69,6 +69,14 @@ Moving into the second week, team members played each candidate game to gain a d
 | **Art Designers**            | Attracting the attention of potential players      | As a developer, I want to design a series of posters that match the theme of the game, so that it can attract potential players during the promotion period. | Given the game has a clear theme and visual style, When the designed posters are showcased during the promotion period, Then each poster should align with the game's theme and effectively capture potential players' attention. |
 
 
+## Level Design
+
+In our game design, we firmly adhere to the principle of “User Control and Freedom.” We implemented a level selection system that allows players to freely choose which stage to play, preventing frustration from getting stuck on a single difficult level. Additionally, players can quickly access the settings menu by pressing the "P" key or clicking the clearly visible pause button in the UI, providing an immediate way to exit or restart. 
+
+This design enhances operational flexibility and ensures that users can recover from mistakes or change their decisions without being locked into a single path, resulting in a smoother and more enjoyable gameplay experience.
+
+
+
 ## Inclusive Game Accessibility Design: Empowering Every Player
 
 Our 2D platform shooting game is designed with the belief that games should be accessible to all, regardless of physical, sensory, or cognitive ability. Rooted in the principles of digital accessibility, our design is guided by WCAG standards, the “two golden rules” of accessibility (keyboard navigation and screen reader compatibility), and Tim Berners-Lee’s ethos of universal access.
