@@ -76,6 +76,26 @@ In our game design, we firmly adhere to the principle of “User Control and Fre
 This design enhances operational flexibility and ensures that users can recover from mistakes or change their decisions without being locked into a single path, resulting in a smoother and more enjoyable gameplay experience.
 
 
+## Game Testing Summary
+
+Our game is a 2D platformer adventure featuring procedurally designed levels, partial lighting environments, and progressive difficulty including boss battles. To ensure quality, we adopted a systematic Software Quality Testing (SQT) approach combining both Quality Assurance (QA) and Quality Control (QC) practices.
+
+During QA, we established coding standards, Git version control conventions, and regular peer reviews to prevent defects early in development. We also held design walkthroughs to confirm gameplay logic, player controls, and accessibility flows before implementation.
+
+In QC, we conducted extensive functional testing, including level design validation. Early versions of our maps were found to be unsuitable in pacing and layout. To address this, developers manually playtested each level to iteratively refine the platform distribution, enemy placement, and lighting conditions—resulting in a more engaging and playable experience. 
+
+We also carried out difficulty balancing tests. Our game now offers two distinct modes: a **“Normal Mode”** with fully lit environments for beginners, and a **“Exploration Mode”** where players navigate in restricted visibility, creating a true challenge for experienced players. This mode-based differentiation was key in enhancing overall player satisfaction.
+
+At the character control level, we identified early issues with weapon alignment and player orientation. Initially, the gun rotation was disconnected from the player’s facing direction, causing confusion. We resolved this by binding the player’s orientation to the mouse-controlled weapon direction, achieving a more intuitive and responsive control experience.
+
+Furthermore, we took game accessibility seriously. We collaborated with a local disability support organization in Bristol to conduct usability testing with players who have motor or visual impairments. Their feedback revealed key flaws in our initial accessibility concept, prompting revisions such as improved one-handed controls, clearer interface contrast, and simplified key mappings. These improvements greatly enhanced the inclusiveness and practicality of our design.
+
+We also ran regression testing after each update to verify that new changes did not break existing functionality, and performed cross-platform compatibility tests across major browsers. Bugs were tracked and resolved using GitHub Issues with a structured test–fix–verify workflow.
+
+Through this structured and iterative process, we enhanced game stability, improved player experience across skill levels, and delivered a more accessible and polished final product.
+
+
+
 
 ## Inclusive Game Accessibility Design: Empowering Every Player
 
