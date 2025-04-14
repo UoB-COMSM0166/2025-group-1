@@ -126,8 +126,39 @@ Additionally, the game lacks mechanisms for handling user profiles or login sess
 
 Critically, this case study reflects a broader issue in small- to mid-scale game development: privacy is often deprioritized in favor of functionality and aesthetics. Developers may unintentionally introduce privacy risks simply by failing to implement basic data governance measures. By adopting principles such as data minimization, user consent, and transparency early in the design phase, developers can create experiences that are not only enjoyable but also ethically sound. Respecting user privacy should not be treated as an afterthought, but as a central tenet of responsible game design in the digital era.
 
+# Sustainability, Ethics & Accessibility 
 
+## 🌍 Environmental Impact
+**Optimized resource usage and energy efficiency across server/client architecture.**
 
+| Initiative | Implementation Evidence | Code Snippet |
+|------------|--------------------------|--------------|
+| **AWS Predictive Scaling** | Auto-save minimizes server load during level transitions | `saveManager.js`<br>`function autoSaveOnPortal()` |
+| **Local Storage Optimization** | Saves progress locally to reduce cloud dependency | `saveManager.js`<br>`localStorage.setItem("saveData")` |
+| **Dynamic Particle Rendering** | Limits GPU-intensive effects to critical frames | `portalSystem.js`<br>`if (frameCount % 6 === 0)` |
+| **Backward Compatibility** | Supports Android 8+ devices to reduce e-waste | `main.js`<br>`applyBrightnessOverlay()` |
+
+## 👥 Social Impact 
+**Inclusive design and ethical gameplay mechanics.**
+
+| Feature | Implementation Evidence | Code Snippet |
+|---------|-------------------------|--------------|
+| **High-Contrast Mode** | Enhanced visibility for color-blind players | `main.js`<br>`settings.contrast = true` |
+| **Accessibility Controller** | Auto-aim for motor-impaired users | `AccessibilityController.js`<br>`gunAngle auto-rotation` |
+| **Localized Privacy** | GDPR-compliant local data storage | `saveManager.js`<br>`localStorage usage` |
+| **Addiction Mitigation** | Clear pause/exit prompts | `ui.js`<br>`text("Press R to Restart")` |
+
+## 💻 Technical Impact
+**Sustainable coding practices and modular architecture.**
+
+| Practice | Implementation Evidence | Code Snippet |
+|----------|-------------------------|--------------|
+| **Animation Caching** | Reuses sprite frames to reduce GPU load | `Animation.js`<br>`this.frames reuse` |
+| **Decoupled Systems** | Portal logic separated from rendering | `portalSystem.js`<br>`Portal.checkCollision()` |
+| **Efficient State Management** | Minimal serialization for saves | `saveManager.js`<br>`saveGame()` |
+| **Procedural Level Design** | Reduces art asset waste | `Platform.js`<br>`this.tileMap generation` |
+
+---
 
 ### Design
 
