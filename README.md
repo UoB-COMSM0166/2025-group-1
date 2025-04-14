@@ -133,10 +133,10 @@ Critically, this case study reflects a broader issue in small- to mid-scale game
 
 | Initiative | Implementation Evidence | Code Reference |
 |------------|--------------------------|----------------|
-| **Local Storage Optimization** | Reduces server requests by storing progress locally | [`saveManager.js`](saveManager.js)<br>`localStorage.setItem("saveData")` |
-| **Dynamic Particle Limiting** | Reduces GPU load through frame-controlled effects | [`portalSystem.js`](portalSystem.js)<br>`if (frameCount % 6 === 0)` |
-| **Efficient Animation Handling** | Reuses sprite frames to minimize texture swaps | [`Animation.js`](Animation.js)<br>`this.frames` array reuse |
-| **Light Effect Optimization** | Adaptive rendering based on gameplay context | [`lightEffect.js`](lightEffect.js)<br>`drawLightEffectWithDecay()` |
+| **Local Storage Optimization** | Reduces server requests by storing progress locally | `saveManager.js`<br>`localStorage.setItem("saveData")` |
+| **Dynamic Particle Limiting** | Reduces GPU load through frame-controlled effects | `portalSystem.js`<br>`if (frameCount % 6 === 0)` |
+| **Efficient Animation Handling** | Reuses sprite frames to minimize texture swaps | `Animation.js`<br>`this.frames` array reuse |
+| **Light Effect Optimization** | Adaptive rendering based on gameplay context | `lightEffect.js`<br>`drawLightEffectWithDecay()` |
 
 ## 👥 Social Impact 
 **Inclusive design and ethical gameplay mechanics.**
@@ -148,15 +148,15 @@ Critically, this case study reflects a broader issue in small- to mid-scale game
 | **Localized Privacy** | GDPR-compliant local data storage | `saveManager.js`<br>`localStorage usage` |
 | **Addiction Mitigation** | Clear pause/exit prompts | `ui.js`<br>`text("Press R to Restart")` |
 
-## 💻 Technical Impact
-**Sustainable coding practices and modular architecture.**
+## 🛠 Technical Impact
+**Sustainable coding practices and maintainability**
 
-| Practice | Implementation Evidence | Code Snippet |
-|----------|-------------------------|--------------|
-| **Animation Caching** | Reuses sprite frames to reduce GPU load | `Animation.js`<br>`this.frames reuse` |
-| **Decoupled Systems** | Portal logic separated from rendering | `portalSystem.js`<br>`Portal.checkCollision()` |
-| **Efficient State Management** | Minimal serialization for saves | `saveManager.js`<br>`saveGame()` |
-| **Procedural Level Design** | Reduces art asset waste | `Platform.js`<br>`this.tileMap generation` |
+| Practice | Implementation Evidence | Code Reference |
+|----------|-------------------------|----------------|
+| **Modular Architecture** | Decoupled systems for easy maintenance | `portalSystem.js`<br>Separate Portal class |
+| **Energy-Efficient Collision** | Optimized AABB collision detection | `Player.js`<br>`handleHorizontalCollisions()` |
+| **Memory Management** | Automatic cleanup of game objects | `initializeGame.js`<br>`platforms = []` reset |
+| **Procedural Content** | Dynamic platform generation | `Platform.js`<br>`this.tileMap` system |
 
 ---
 
