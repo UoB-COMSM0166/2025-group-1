@@ -3,9 +3,8 @@
 
 ## Demonstration
 
-Ready for an adventure?  Click the link to start playing![PLAY HERE](https://uob-comsm0166.github.io/2025-group-1/)
+[Ready for an adventure?  Click the link to start playing! 🏹💥🚀 ](https://uob-comsm0166.github.io/2025-group-1/)
 
-Your game lives in the [/docs](/docs) folder, and is published using Github pages to the link above.
 
 
 ## Your Group
