@@ -223,3 +223,26 @@ You can delete this section in your own repo, it's just here for information. in
 
   - Is your repo clearly organised? 
   - Is code well commented throughout?
+
+ABOUT CHALLANGE OF ENEMY AI
+
+Overview
+The primary goal of this enemy AI modification is to provide a dynamic, responsive challenge by enabling enemy characters to actively track and chase the player when on the same platform. Enemies will remain in a passive idle state until the player lands on their platform. Once activated, they will switch to a high-speed chase mode to close the distance and then execute an attack when nearby. If the player jumps off or leaves the platform, the enemy will not pursue off-platform, instead reverting to a patrol state after a short delay.
+
+Behavior States
+The enemy will transition through a series of states during gameplay:
+• Idle: Initially, the enemy remains in a stationary or low-mobility patrol mode on the platform. In this state, the enemy performs background animations and minor movements that simulate waiting or patrolling within its confined area.
+• Chase: When the player lands on the same platform, the enemy transitions from idle to a chase state. In this mode, the enemy’s movement speed increases substantially to follow the player horizontally. The velocity is adjusted to ensure that once it gets close enough, it can switch into an attack mode.
+• Attack: Upon reaching proximity with the player, the enemy will stop its forward run and perform an attack animation or sequence. This could include a lunge or swinging motion, which inflicts damage if the collision conditions are met.
+• Return/Patrol: If the player jumps off the enemy’s platform, the enemy should not continue its pursuit. Instead, it maintains its presence on the original platform, waits for a few seconds, and then reverts to its original patrol or idle state. This constraint simplifies enemy logic, ensuring that the enemy cannot leave its designated platform area, which also minimizes potential errors in collision and platform boundary detection.
+
+Triggering Conditions and Detection
+To manage the transitions effectively:
+• Platform Detection: A collision or overlap function will verify if the player is on the same platform as the enemy. This can be implemented by checking if the player’s bounding box overlaps or is sufficiently near the platform boundaries where the enemy resides.
+• Distance Check: A dynamic check using the distance between the player and enemy verifies when the enemy should switch from chase to attack mode. The threshold for attack is carefully chosen to allow the enemy sufficient time to perform an attack animation.
+• State Timers: A brief countdown timer is utilized when the player leaves the platform. Only if the player remains absent for the defined period does the enemy switch back to its default patrol behavior.
+
+Implementation Considerations
+In the game loop, the enemy’s update function will integrate these state transitions. Based on collision tests and distance calculations, the enemy modifies its speed variable—normal speed in patrol mode and a higher ‘attackSpeed’ in chase mode. The enemy’s horizontal movement logic should be adjusted to consider platform boundaries, ensuring it reverses direction upon reaching a platform edge.
+
+This design ensures that the enemy AI presents a credible threat when the player is vulnerable on a platform, while also keeping behaviors predictable and confined, avoiding unpredictable off-platform pursuits. By combining state management, collision detection, and temporal delays, the chase functionality delivers a challenging yet controlled mechanic that enhances the gameplay experience in the platformer.
