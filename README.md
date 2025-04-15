@@ -5,7 +5,7 @@
 
 [Ready for an adventure?  Click the link to start playing! 🏹💥🚀 ](https://uob-comsm0166.github.io/2025-group-1/)
 
-## 📚 Table of Contents 目录
+# 📚 Table of Contents 目录
 
 -  [1. Development Team👥](#1-development-team)
 -  [2. Introduction📝](#2-introduction)
@@ -18,7 +18,7 @@
 -  [9. References📚](#9-references)
 
 
-## Your Group
+# 1. Development Team
 
 ![f39cc4e1d8b6dd73d4d2db40f5900f1](https://github.com/user-attachments/assets/c3ffb7cf-7c44-414e-b030-84610f4f36cd)
 
@@ -33,9 +33,7 @@
 | 6      | Hanzhen Guo   | om24630@bristol.ac.uk        |      |
 
 
-## Project Report
-
-## 2.Introduction
+# 2. Introduction
 
 Our group's idea for the game was inspired by the game Spelunky, which is in the rougue-like game genre and takes place in a cave where the player must explore. The game has a lot of richness and randomized gameplay variations, and the gold or gems earned from each level can be exchanged at the store. Though we have made certain changes and will be expanding the gameplay by allowing the player to decrypt and piece together the main plot, our group's gaming mechanics are comparable to those of a rouguelike. Our game has an inventive twist because it is set in a future, deserted laboratory. Additionally, a few minor elements like partial lighting might encourage players to explore the terrain more, and certain function keys would enhance the game's playability.
 
