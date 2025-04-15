@@ -35,7 +35,15 @@
 
 # 2. Introduction
 
-Our group's idea for the game was inspired by the game Spelunky, which is in the rougue-like game genre and takes place in a cave where the player must explore. The game has a lot of richness and randomized gameplay variations, and the gold or gems earned from each level can be exchanged at the store. Though we have made certain changes and will be expanding the gameplay by allowing the player to decrypt and piece together the main plot, our group's gaming mechanics are comparable to those of a rouguelike. Our game has an inventive twist because it is set in a future, deserted laboratory. Additionally, a few minor elements like partial lighting might encourage players to explore the terrain more, and certain function keys would enhance the game's playability.
+The game is set in the year 4500, where players take on the role of a scavenger who accidentally enters a long-abandoned underground laboratory. As they battle enemies and search for a way out, players gradually uncover the tragic history behind the facility through scattered logs. Once a site for radical immortality experiments, the lab was ultimately destroyed by the creation of a failed bio-engineered entity—the uncontrollable “Ultimate Specimen.” The narrative offers a reflection on the dangers of unchecked ambition and highlights the importance of respecting nature.
+
+Inspired by the classic roguelike Spelunky, our game retains its core mechanics while introducing puzzle-solving elements and deeper narrative immersion. The main objective is simple yet challenging: survive and escape. To meet diverse player needs, we offer three game modes—a casual mode for relaxed play, an exploration mode featuring partial map illumination, and an inclusive mode specifically designed for single-arm players.
+
+During development, we tackled two major technical challenges: building an intelligent enemy AI capable of dynamic tracking, and designing a responsive audio system that adapts in real time to the player’s state, enhancing overall immersion.
+
+Accessibility remained a core design principle. In addition to single-arm player support, we also optimized color schemes to accommodate players with color vision deficiencies, ensuring an inclusive experience for all.
+
+Our team followed an agile development approach, using GitHub for version control. We began with interface prototyping to ensure seamless integration across modules (AI, UI, audio). Through continuous user testing, we refined gameplay difficulty, visual design, and core mechanics to deliver a smooth and rewarding experience for every player.
 
 Paper Prototype(https://raw.githubusercontent.com/UoB-COMSM0166/2025-group-1/main/Two-paper-prototype-ideas/Video2.mp4)
 
