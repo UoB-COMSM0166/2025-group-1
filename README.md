@@ -72,6 +72,13 @@ During the discussion, we thoroughly analyzed each game's core mechanics, potent
 Moving into the second week, team members played each candidate game to gain a deeper understanding of their core mechanics, followed by another discussion session. After intense deliberation, we decided to develop a game that preserves the characteristics of the original while significantly enhancing its fun factor with minimal yet impactful new mechanics. The game also needed to have strong potential for innovation and engaging conflicts. Ultimately, we chose Spelunky as our prototype—a classic roguelike game. Building on its core features, we plan to introduce an exploration mode, integrating localized lighting mechanics and puzzle-solving elements to create a brand-new game concept. The team unanimously agreed on this idea and finalized it as our development direction.
 
 
+### Early stages design
+
+In the early stage of development, we created a paper prototype to visualize and test the game’s core mechanics. During this phase, we discussed player goals, rule interactivity, and sources of engagement. This led to the removal of the “pet-following” mechanic, which proved less compelling in playtests. The prototype allowed us to rapidly validate and refine level layouts, enemy behavior, and puzzle logic—saving time and resources.
+
+Additionally, it gave us an early opportunity to test accessibility features, such as simulating single-arm play and evaluating rule clarity, ensuring inclusivity from the very beginning. The paper prototype provided clear development direction and significantly improved our workflow efficiency.
+
+
  
 ### User stories
 
