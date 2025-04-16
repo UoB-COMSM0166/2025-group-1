@@ -48,11 +48,8 @@ Our team followed an agile development approach, using GitHub for version contro
 ![e5b0ad7d92a5d522a6e053862a96bb7](https://github.com/user-attachments/assets/d857830b-8c6d-4c94-bbd3-ca5fac034e45)
 
 
-
 Paper Prototype(https://raw.githubusercontent.com/UoB-COMSM0166/2025-group-1/main/Two-paper-prototype-ideas/Video2.mp4)
 
-- 5% ~250 words 
-- Describe your game, what is based on, what makes it novel? 
 
 ## 3.Requirements 
 
