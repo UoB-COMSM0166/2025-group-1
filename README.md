@@ -35,7 +35,7 @@
 
 # 2. Introduction
 
-The game is set in the year 4500, where players take on the role of a scavenger who accidentally enters a long-abandoned underground laboratory. As they battle enemies and search for a way out, players gradually uncover the tragic history behind the facility through scattered logs. Once a site for radical immortality experiments, the lab was ultimately destroyed by the creation of a failed bio-engineered entity—the uncontrollable “Ultimate Specimen.” The narrative offers a reflection on the dangers of unchecked ambition and highlights the importance of respecting nature.
+The game is set in the year 2500, where players take on the role of a scavenger who accidentally enters a long-abandoned underground laboratory. As they battle enemies and search for a way out, players gradually uncover the tragic history behind the facility through scattered logs. Once a site for radical immortality experiments, the lab was ultimately destroyed by the creation of a failed bio-engineered entity—the uncontrollable “Ultimate Specimen.” The narrative offers a reflection on the dangers of unchecked ambition and highlights the importance of respecting nature.
 
 Inspired by the classic roguelike Spelunky, our game retains its core mechanics while introducing puzzle-solving elements and deeper narrative immersion. The main objective is simple yet challenging: survive and escape. To meet diverse player needs, we offer three game modes—a casual mode for relaxed play, an exploration mode featuring partial map illumination, and an inclusive mode specifically designed for single-arm players.
 
