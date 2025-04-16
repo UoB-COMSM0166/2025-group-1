@@ -74,9 +74,9 @@ Moving into the second week, team members played each candidate game to gain a d
 
 ## Early stages design
 
-In the early stage of development, we created a paper prototype to visualize and test the game’s core mechanics. During this phase, we discussed player goals, rule interactivity, and sources of engagement. This led to the removal of the “pet-following” mechanic, which proved less compelling in playtests. The prototype allowed us to rapidly validate and refine level layouts, enemy behavior, and puzzle logic—saving time and resources.
+In the early stage of development, we created a paper prototype to visualize and test the game’s core mechanics. During this phase, we discussed player goals, gameplay logic, and fun factors.  This process also revealed that the “pet-following” mechanic lacked engagement, leading us to remove it. The prototype allowed us to rapidly validate and refine level layouts, enemy behavior, and puzzle logic—saving time and resources.
 
-Additionally, it gave us an early opportunity to test accessibility features, such as simulating single-arm play and evaluating rule clarity, ensuring inclusivity from the very beginning. The paper prototype provided clear development direction and significantly improved our workflow efficiency.
+Additionally, it gave us an early opportunity to test accessibility features, such as simulating single-arm play and evaluating rule clarity, ensuring inclusivity from the very beginning. Overall, the paper prototype provided clear development direction and significantly improved our workflow efficiency.
 
 
  
