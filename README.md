@@ -191,7 +191,9 @@ Critically, this case study reflects a broader issue in small- to mid-scale game
 | Accessibility | Full WCAG 2.1 AA compliance | Axe DevTools audit |
 | Code Reuse | 60% shared components | CodeClimate duplication analysis |
 
+
 #High contrast：friendly to everyone
+
 In this game, High Contrast mode is woven through every core system to give visually impaired players the clearest possible experience in any screen or scenario:
 
 ##Global Toggle & Settings
