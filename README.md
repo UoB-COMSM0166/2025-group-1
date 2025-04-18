@@ -192,26 +192,26 @@ Critically, this case study reflects a broader issue in small- to mid-scale game
 | Code Reuse | 60% shared components | CodeClimate duplication analysis |
 
 
-#High contrast：friendly to everyone
+# High contrast：friendly to everyone
 
 In this game, High Contrast mode is woven through every core system to give visually impaired players the clearest possible experience in any screen or scenario:
 
-##Global Toggle & Settings
+## Global Toggle & Settings
 A single “High Contrast” switch in the Settings menu lets players turn the mode on or off at any time. The game listens to this flag and updates the entire UI immediately—no restart or reload required.
 
-##Menus & Backgrounds
+## Menus & Backgrounds
 Main menus and pause screens swap their background between dark gray and pure black depending on the contrast setting. This maximizes the difference between text, buttons, and highlights, making menu options instantly legible even in very bright or dim environments.
 
-##Accessibility Mode Integration
+## Accessibility Mode Integration
 Selecting Accessibility Mode automatically enables High Contrast (and sets brightness to maximum). From story panels to in‑level views, every frame renders with the strongest foreground‑to‑background separation, so low‑vision players never miss critical information.
 
-##HUD & On‑Screen Prompts
+## HUD & On‑Screen Prompts
 Health bars, heart icons, game‑over messages, and all on‑screen text cues use pure white, bright red, or other highly saturated accent colors. In High Contrast mode, these elements leap off the background, ensuring vital status and system prompts are unmistakable during gameplay.
 
-##Interactive Feedback & Transitions
+## Interactive Feedback & Transitions
 Door‑exit hints, level‑transition text, and “Press E to continue” prompts all employ the boldest possible colors. Semi‑transparent overlays and solid‑color masks further sharpen these cues, guiding players quickly to their next interaction.
 
-##Instant, Seamless Response
+## Instant, Seamless Response
 Every change to High Contrast takes effect on the fly—whether toggled manually or triggered by entering Accessibility Mode—so there’s no break in gameplay. The UI palette updates smoothly and consistently across all screens, maintaining immersion and flow.
 
 ### Design
