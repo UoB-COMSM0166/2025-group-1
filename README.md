@@ -151,6 +151,8 @@ Critically, this case study reflects a broader issue in small- to mid-scale game
 
 # Sustainability, Ethics & Accessibility 
 
+At the early stage of development, we adopted a sustainability-conscious design approach by setting the game's default screen brightness to 50%. This decision aims to reduce energy consumption without compromising the core visual experience. Players are still given the flexibility to adjust the brightness according to their personal preferences, striking a balance between user comfort and energy efficiency.
+
 ## 🌍 Environmental Impact
 **Optimized client-side performance and resource efficiency**
 
