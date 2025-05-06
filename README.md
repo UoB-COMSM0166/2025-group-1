@@ -78,6 +78,8 @@ In the early stage of development, we created a paper prototype to visualize and
 
 Additionally, it gave us an early opportunity to test accessibility features, such as simulating single-arm play and evaluating rule clarity, ensuring inclusivity from the very beginning. Overall, the paper prototype provided clear development direction and significantly improved our workflow efficiency.
 
+![image](https://github.com/user-attachments/assets/72a081df-44c3-417c-a2c5-2de8ade477df)
+
 
  
 ## User stories
