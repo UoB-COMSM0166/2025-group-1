@@ -45,6 +45,7 @@ Accessibility remained a core design principle. In addition to single-arm player
 
 Our team followed an agile development approach, using GitHub for version control. We began with interface prototyping to ensure seamless integration across modules (AI, UI, audio). Through continuous user testing, we refined gameplay difficulty, visual design, and core mechanics to deliver a smooth and rewarding experience for every player.
 
+![宣传海报](https://github.com/user-attachments/assets/9bdc8825-ee57-4456-bb98-49788907e947)
 
 
 Paper Prototype(https://raw.githubusercontent.com/UoB-COMSM0166/2025-group-1/main/Two-paper-prototype-ideas/Video2.mp4)
