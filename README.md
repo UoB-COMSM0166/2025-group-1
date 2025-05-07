@@ -51,7 +51,7 @@ Our team followed an agile development approach, using GitHub for version contro
 Paper Prototype(https://raw.githubusercontent.com/UoB-COMSM0166/2025-group-1/main/Two-paper-prototype-ideas/Video2.mp4)
 
 
-# 3.Requirements 
+# 3. Requirements 
 
 ## Ideation process
 
@@ -92,6 +92,44 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 | **Amblyopia Players**       | Enhanced screen contrast for a clear and hassle-free gaming experience | As a player, I want to enhance the contrast of the screen so that I can clearly recognize everything in the game and have a more comfortable gaming experience. | Given that the visual setting to enhance the contrast of the screen is enabled, When I start the game as a partially sighted player, Then I can clearly distinguish all key elements of the game. |
 | **Gameplay Programmer**     | Player vs Enemy Combat System Features             | As a developer, I want to implement a player vs enemy combat system, so that players can engage in battles with different enemy types.           | Given that there are various enemy types in the game scene (such as melee enemies, ranged enemies, and bosses), When the player engages in combat, Then each enemy should display unique attack styles, movement behaviors, and health attributes. |
 | **Art Designers**            | Attracting the attention of potential players      | As a developer, I want to design a series of posters that match the theme of the game, so that it can attract potential players during the promotion period. | Given the game has a clear theme and visual style, When the designed posters are showcased during the promotion period, Then each poster should align with the game's theme and effectively capture potential players' attention. |
+
+
+## Use case diagrams
+
+
+# 4. Design
+
+## system architecture
+
+
+## Class diagrams
+
+
+## Behavioural diagrams
+
+
+# 5. Implementation
+
+## Challenge 1 : Enemy AI Tracking
+
+Our first major challenge was designing an enemy AI that could dynamically track and chase the player while remaining confined to its platform and avoiding erratic behavior. We chose a finite state machine (FSM) for its simplicity, performance, and maintainability. Although more advanced systems like behavior trees or GOAP offer finer-grained control—and machine-learning approaches (reinforcement or supervised) enable highly adaptive agents—they demand full training environments, large datasets, and inference integration, which greatly increases development complexity. In most 2D platformers, an FSM-based logic sequence (“player on platform → chase → attack”) delivers robust, predictable gameplay with minimal overhead.
+
+**FSM States**
+
+1. Standby: The enemy idles or patrols slowly, playing background animations. When the player enters the same platform, it immediately orients toward them.
+   
+2. Alert: Upon detection, the enemy triggers a roar animation and freezes briefly to heighten tension.
+   
+3. Chase: It switches to high-speed pursuit at attackSpeed, following the player horizontally. A continuous distance check monitors when the player enters attackRange.
+   
+4. Attack: Once within attackRange, the enemy stops and executes an attack animation (e.g., a lunge or swing), applying damage only if collision conditions are met.
+   
+5. Return/Patrol: If the player leaves the platform, a short countdown (e.g., two seconds) triggers a return to Standby or Patrol, preventing off-platform pursuits.
+
+
+
+
+
 
 
 ## Level Design
