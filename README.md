@@ -116,29 +116,29 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 
 # 5. Implementation
 
-## Challenge 1 : Enemy AI Tracking
+## Challenge 1 : Enemy AI Tracking - FSM Rationale & Solution
 
 Our first major challenge was designing an enemy AI that could dynamically track and chase the player while remaining confined to its platform and avoiding erratic behavior. We chose a finite state machine (FSM) for its simplicity, performance, and maintainability. Although more advanced systems like behavior trees or GOAP offer finer-grained control—and machine-learning approaches (reinforcement or supervised) enable highly adaptive agents—they demand full training environments, large datasets, and inference integration, which greatly increases development complexity. In most 2D platformers, an FSM-based logic sequence (“player on platform → chase → attack”) delivers robust, predictable gameplay with minimal overhead.
 
 **FSM States**
 
-1. Standby: The enemy idles or patrols slowly, playing background animations. When the player enters the same platform, it immediately orients toward them.
+- Standby: The enemy idles or patrols slowly, playing background animations. When the player enters the same platform, it immediately orients toward them.
    
-2. Alert: Upon detection, the enemy triggers a roar animation and freezes briefly to heighten tension.
+- Alert: Upon detection, the enemy triggers a roar animation and freezes briefly to heighten tension.
    
-3. Chase: It switches to high-speed pursuit at attackSpeed, following the player horizontally. A continuous distance check monitors when the player enters attackRange.
+- Chase: It switches to high-speed pursuit at attackSpeed, following the player horizontally. A continuous distance check monitors when the player enters attackRange.
    
-4. Attack: Once within attackRange, the enemy stops and executes an attack animation (e.g., a lunge or swing), applying damage only if collision conditions are met.
+- Attack: Once within attackRange, the enemy stops and executes an attack animation (e.g., a lunge or swing), applying damage only if collision conditions are met.
    
-5. Return/Patrol: If the player leaves the platform, a short countdown (e.g., two seconds) triggers a return to Standby or Patrol, preventing off-platform pursuits.
+- Return/Patrol: If the player leaves the platform, a short countdown (e.g., two seconds) triggers a return to Standby or Patrol, preventing off-platform pursuits.
 
 **Transition Mechanics**
 
-Platform Detection: A collision or overlap function verifies whether the player and enemy share the same platform by checking bounding-box overlaps or proximity to platform boundary markers.
+- Platform Detection: A collision or overlap function verifies whether the player and enemy share the same platform by checking bounding-box overlaps or proximity to platform boundary markers.
 
-Distance Check & Thresholds: We run a continuous distance check to determine when to switch from Chase to Attack. We fine-tune the attackRange threshold to ensure the AI has enough animation frames to complete its attack sequence once the transition occurs.
+- Distance Check & Thresholds: We run a continuous distance check to determine when to switch from Chase to Attack. We fine-tune the attackRange threshold to ensure the AI has enough animation frames to complete its attack sequence once the transition occurs.
 
-State Timers & Return Delay: Upon player exit, a brief countdown timer starts (e.g., two seconds). Only if the player remains off-platform for the full duration does the enemy revert to Standby or Patrol, smoothing the state change and preventing unnecessary off-platform chasing.
+- State Timers & Return Delay: Upon player exit, a brief countdown timer starts (e.g., two seconds). Only if the player remains off-platform for the full duration does the enemy revert to Standby or Patrol, smoothing the state change and preventing unnecessary off-platform chasing.
 
 **Implementation Details**
 
