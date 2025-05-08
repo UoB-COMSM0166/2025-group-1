@@ -99,13 +99,12 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 
 # 4. Design
 
-## system architecture
-
-
 ## Class diagrams
+![Class diagram](https://github.com/user-attachments/assets/df0f4ff7-4c1d-40d7-b117-bf6671d02dfb)
 
 
-## Behavioural diagrams
+## Sequence Diagrams
+![Sequence Diagram](https://github.com/user-attachments/assets/10c5c9d7-856f-4b09-b39e-35385a545b16)
 
 
 # 5. Implementation
