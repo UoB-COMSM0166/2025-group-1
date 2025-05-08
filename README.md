@@ -78,7 +78,14 @@ In the early stage of development, we created a paper prototype to visualize and
 
 Additionally, it gave us an early opportunity to test accessibility features, such as simulating single-arm play and evaluating rule clarity, ensuring inclusivity from the very beginning. Overall, the paper prototype provided clear development direction and significantly improved our workflow efficiency.
 
-![image](https://github.com/user-attachments/assets/72a081df-44c3-417c-a2c5-2de8ade477df)
+![image](https://github.com/user-attachments/assets/72a081df-44c3-417c-a2c5-2de8ade477df) 
+
+
+
+**Add Animation 1 !!**
+
+**Add Animation 2 !!**
+
 
 
  
@@ -126,6 +133,8 @@ Our first major challenge was designing an enemy AI that could dynamically track
 5. Return/Patrol: If the player leaves the platform, a short countdown (e.g., two seconds) triggers a return to Standby or Patrol, preventing off-platform pursuits.
 
 
+
+**Add Animation 3 !!**
 
 
 
