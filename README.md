@@ -118,7 +118,11 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 
 ## Challenge 1 : Enemy AI Tracking
 
-Our first major challenge was designing an enemy AI that could dynamically track and chase the player while remaining confined to its platform and avoiding erratic behavior. We chose a finite state machine (FSM) for its simplicity, performance, and maintainability. Although more advanced systems like behavior trees or GOAP offer finer-grained control—and machine-learning approaches (reinforcement or supervised) enable highly adaptive agents—they demand full training environments, large datasets, and inference integration, which greatly increases development complexity. In most 2D platformers, an FSM-based logic sequence (“player on platform → chase → attack”) delivers robust, predictable gameplay with minimal overhead.
+Our first major challenge was designing an enemy AI that could dynamically track and chase the player while remaining confined to its platform and avoiding erratic behavior. 
+
+We chose a **finite state machine (FSM)** for its **simplicity, performance**, and **maintainability**. Although more advanced systems like **Behavior trees** or **GOAP** offer finer-grained control—and **machine-learning** approaches (reinforcement or supervised) enable highly adaptive agents—they demand full training environments, large datasets, and inference integration, which greatly increases development complexity. 
+
+In most 2D platformers, an FSM-based logic sequence (“player on platform → chase → attack”) delivers **robust, predictable** gameplay with **minimal overhead**.
 
 **FSM States**
 
@@ -144,9 +148,33 @@ Our first major challenge was designing an enemy AI that could dynamically track
 
 In the main update loop, collision tests and distance calculations drive state transitions. We toggle the enemy’s speed variable between patrolSpeed and attackSpeed, and enforce platform boundaries by reversing direction at edges. This FSM-driven approach reduces collision and boundary-detection errors, ensuring enemies remain reliable threats that enhance gameplay without sacrificing stability or maintainability. Overall, this FSM pattern balances complexity and functionality, giving designers clear hooks for future tweaks.
 
-
-
 **Add Animation 3 !!**
+
+
+## Challenge 2: Intelligent Audio Switching System
+
+To enhance immersion and responsiveness, we developed a smart audio scheduling system based on a **behavior tree architecture**. This system dynamically controls background music and sound effects in real time, adapting to gameplay progress and UI context. It comprises four core components:
+
+- **Context-Based Background Music**
+
+The system detects the current game interface—main menu, in-game action, or result screen—and automatically switches to the appropriate background track. Calm or tense atmospheres are created accordingly, enhancing player engagement.
+
+- **One-Time Event Sound Effects**
+
+For instantaneous, impactful events—like gunfire, explosions, or heartbeat alerts when health is low—the system triggers one-off sound effects that play immediately upon activation. These sounds are short, high-intensity cues that heighten urgency without looping.
+
+- **Combat State Audio Transition**
+
+When the player engages in continuous firing within enemy range (excluding final boss stages), the system enters “combat mode.” The background music transitions seamlessly to an intense battle theme. Once the player stops attacking and exits combat distance, the music smoothly fades back to the standard track, maintaining emotional synchronization with gameplay.
+
+- **Audio Priority Management**
+
+To handle overlapping sound triggers, we implemented a priority system. Each sound effect is assigned a priority level. When multiple effects are triggered simultaneously, the system ensures the highest-priority sound plays first, reducing auditory clutter and preserving clarity.
+
+This **behavior tree–driven approach** allows for modular logic and scalable control. All transitions—whether from idle to combat, or from event SFX to ambient background—are managed through a consistent and flexible structure. The result is a polished audio system that delivers **fluid, immersive, and emotionally responsive** feedback throughout the player’s experience.
+
+**Add Animation 4 !!**
+
 
 
 
