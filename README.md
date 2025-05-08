@@ -132,11 +132,21 @@ Our first major challenge was designing an enemy AI that could dynamically track
    
 5. Return/Patrol: If the player leaves the platform, a short countdown (e.g., two seconds) triggers a return to Standby or Patrol, preventing off-platform pursuits.
 
+**Transition Mechanics**
+
+Platform Detection: A collision or overlap function verifies whether the player and enemy share the same platform by checking bounding-box overlaps or proximity to platform boundary markers.
+
+Distance Check & Thresholds: We run a continuous distance check to determine when to switch from Chase to Attack. We fine-tune the attackRange threshold to ensure the AI has enough animation frames to complete its attack sequence once the transition occurs.
+
+State Timers & Return Delay: Upon player exit, a brief countdown timer starts (e.g., two seconds). Only if the player remains off-platform for the full duration does the enemy revert to Standby or Patrol, smoothing the state change and preventing unnecessary off-platform chasing.
+
+**Implementation Details**
+
+In the main update loop, collision tests and distance calculations drive state transitions. We toggle the enemy’s speed variable between patrolSpeed and attackSpeed, and enforce platform boundaries by reversing direction at edges. This FSM-driven approach reduces collision and boundary-detection errors, ensuring enemies remain reliable threats that enhance gameplay without sacrificing stability or maintainability. Overall, this FSM pattern balances complexity and functionality, giving designers clear hooks for future tweaks.
+
 
 
 **Add Animation 3 !!**
-
-
 
 
 
