@@ -116,7 +116,7 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 
 # 5. Implementation
 
-## Challenge 1 : Enemy AI Tracking - FSM Rationale & Solution
+## Challenge 1 : Enemy AI Tracking
 
 Our first major challenge was designing an enemy AI that could dynamically track and chase the player while remaining confined to its platform and avoiding erratic behavior. We chose a finite state machine (FSM) for its simplicity, performance, and maintainability. Although more advanced systems like behavior trees or GOAP offer finer-grained control—and machine-learning approaches (reinforcement or supervised) enable highly adaptive agents—they demand full training environments, large datasets, and inference integration, which greatly increases development complexity. In most 2D platformers, an FSM-based logic sequence (“player on platform → chase → attack”) delivers robust, predictable gameplay with minimal overhead.
 
