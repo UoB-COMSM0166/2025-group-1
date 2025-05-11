@@ -1,37 +1,54 @@
+// Level management variables
 let currentLevel = 0;
-const totalLevels = 2; // 总关卡数
+const totalLevels = 4; // Total number of levels
 
+// Check if the player has reached the level portal and transition 
 function checkLevelTransition() {
-    // 定义传送区域（示例坐标，可根据需要修改）
-    const portal = {x: 1550, y: 800, w: 50, h: 50};
+    // Define the portal area (example coordinates, adjust as needed)
+    const portal = { x: 1550, y: 800, w: 50, h: 50 };
 
-    if (player.x > portal.x && player.x < portal.x + portal.w &&
-        player.y > portal.y && player.y < portal.y + portal.h) {
-        if (currentLevel < totalLevels-1) {
+    if (
+        player.x > portal.x && player.x < portal.x + portal.w &&
+        player.y > portal.y && player.y < portal.y + portal.h
+    ) {
+        if (currentLevel < totalLevels - 1) {
             currentLevel++;
             loadLevel(currentLevel);
+            // Reset player health
+            playerHealth = 3;
         }
     }
 }
 
+// Load and initialize a specific level by its number
 function loadLevel(levelNumber) {
-    // 清除所有游戏对象
+    // Clear all game object arrays
     platforms = [];
     enemies = [];
     bullets = [];
     enemyBullets = [];
     storyFragments = [];
+    traps = [];
 
-    // 根据关卡号调用对应初始化函数
-    switch(levelNumber) {
+    // Call the initialization function corresponding to the level number
+    switch (levelNumber) {
         case 0:
             initLevel1();
             break;
         case 1:
             initLevel2();
             break;
+        case 2:
+            initLevel3();
+            break;
+        case 3:
+            initLevel4();
+            break;
     }
 
-    // 重置玩家位置
+    // Reset player position
     player = new Player(225, 70, animations);
+
+    // Initialize the level's portal
+    initPortal();
 }

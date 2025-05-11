@@ -4,46 +4,114 @@ function drawMenu1() {
   let menuX = width / 2 - menuWidth / 2; // Centered horizontally
   let menuY = height / 2 - menuHeight / 2; // Centered vertically
 
-  fill(100);
-  rect(menuX, menuY, menuWidth, 40); // First button
-  rect(menuX, menuY + 50, menuWidth, 40); // Second button
-  rect(menuX, menuY + 100, menuWidth, 40); // Third button
+  clear();
+  image(bgImage, 0, 0, width, height);
+  let menuItems = ["CONTINUE GAME", "SETTING", "EXIT GAME"];
+  drawBackgroundBox(menuItems);
 
-  fill(255);
-  textSize(24); // Increased text size
-  textAlign(CENTER, CENTER);
-  text('CONTINUE GAME', menuX + menuWidth / 2, menuY + 20); // Centered text
-  text('SETTING', menuX + menuWidth / 2, menuY + 70); // Centered text
-  text('EXIT GAME', menuX + menuWidth / 2, menuY + 120); // Centered text
+  for (let i = 0; i < menuItems.length; i++) {
+    drawMenuOption(menuItems[i], width / 2, height / 2 - (menuItems.length * 80 + 20) / 2 + 80 * i + 50, () => {
+      setTimeout(() => { // Delay 50ms to ensure the current frame completes
+        if (menuItems[i] === "CONTINUE GAME") {
+          gameState = 'game'; // Resume the game
+          isPaused = false;   // Unpause
+          menuState = 'story';
+          redraw();
+          loop();  // Ensure game continues running
+        }
+        if (menuItems[i] === "SETTING") {
+          menuState = 'setting';
+        }
+        if (menuItems[i] === "EXIT GAME") {
+          // Only reset when accessibility mode is active
+          if (accessibilityCtrl.isActive) {
+            accessibilityCtrl.isActive = false;
+            accessibilityCtrl.autoRotateGun = false;
+            settings.contrast = false;
+            settings.fontWeightBold = false;
+            console.log("🔁 EXIT: Accessibility mode turned off");
+          }
+          saveBeforeExit();               // Save progress before exiting
+          gameState = 'menu';             // Return to main menu
+          menuState = 'main';
+          isPaused = false;               // Ensure not paused
+          redraw();
+          loop();                         // Ensure main menu displays correctly
+        }
+        redraw();
+      }, 50);
+    });
+  }
+
+  function drawMainMenu() {
+    clear();
+    image(bgImage, 0, 0, width, height);
+    let menuItems = ["CONTINUE", "SETTING", "INSTRUCTIONS"];
+    drawBackgroundBox(menuItems, 0, 400);
+
+    for (let i = 0; i < menuItems.length; i++) {
+      drawMenuOption(menuItems[i], width / 2, height / 2 - (menuItems.length * 80 + 20) / 2 + 80 * i + 50, () => {
+        if (i === 0) {
+          menuState = 'Game';
+        } else if (i === 1) {
+          menuState = 'setting';
+        } else if (i === 2) {
+          menuState = 'Instruction';
+          alert('Introduce Menu Placeholder');
+        }
+        redraw();
+      });
+    }
+  }
 }
 
-function drawSettingsMenu1() {
-  let settingsWidth = 600; // Increased settings menu width
-  let settingsHeight = 400; // Increased settings menu height
-  let settingsX = width / 2 - settingsWidth / 2; // Centered horizontally
-  let settingsY = height / 2 - settingsHeight / 2; // Centered vertically
+function drawSettingMenu1() {
+  clear();
+  image(bgImage, 0, 0, width, height);
+  let menuItems = ["Sound", "Brightness", "High Contrast", "Bold Font", "Color-Blind", "BACK"];
+  drawBackgroundBox(menuItems, -30, 420);
 
-  fill(200);
-  rect(settingsX, settingsY, settingsWidth, settingsHeight); 
+  textAlign(CENTER, CENTER);
+  textSize(36);
+
+  // Controls
+  // Sound
+  drawSlider("Sound", 260, settings.sound, v => settings.sound = Math.round(v));
+  // Brightness
+  drawSlider("Brightness", 350, settings.brightness, v => settings.brightness = Math.round(v));
+  // High Contrast
+  drawToggle("High Contrast", 440, settings.contrast, v => settings.contrast = v);
+  // Bold Font
+  drawToggle("Bold Font", 530, settings.fontWeightBold, v => settings.fontWeightBold = v);
+
+  drawMenuOption(
+    "BACK",
+    width / 2,
+    610,
+    () => {
+      showSettings = false;
+      brightnessSlider.hide();
+      volumeSlider.hide();
+
+      menuState = 'drawmenu1';
+      redraw();
+    }
+  );
+}
+
+function drawInstruction() {
+  clear();
+  image(bgImage, 0, 0, width, height);
+}
+
+function drawWhiteBox(x, y, width, height) {
+  fill(255, 220);    // Semi-transparent white
+  stroke(0);
+  strokeWeight(3);
+  rect(x, y, width, height, 15); // Rounded rectangle
 
   fill(0);
-  textSize(20); // Increased text size
-  textAlign(LEFT, TOP)
-  text('SETTING MENU', settingsX + 20, settingsY + 40);
-  text(`BRIGHTNESS：${brightnessSlider.value()}%`, settingsX + 20, settingsY + 100);
-  text(`VOLUME：${volumeSlider.value()}%`, settingsX + 20, settingsY + 160);
-  text(`HIGH CONTRAST MODE：${highContrast ? "TURN ON" : "TURN OFF"}`, settingsX + 20, settingsY + 220);
-  
-  brightnessSlider.show();
-  volumeSlider.show();
-
-  let closeButtonX = settingsX + settingsWidth / 2 - 70; // Centered close button
-  let closeButtonY = settingsY + 300; // Adjusted vertically
-  fill(150);
-  rect(closeButtonX, closeButtonY, 140, 40); // Larger close button
-  fill(0);
-  textSize(20); // Increased text size
-  text('BACK', closeButtonX + 45, closeButtonY + 15); // Centered text
+  noStroke();
 }
 
 function hideSettings() {
@@ -61,11 +129,16 @@ function mouseClicked() {
 
     if (mouseY >= menuY && mouseY < menuY + 40) {
       isPaused = false;
+      redraw();
+      loop(); // Ensure draw() continues running
     } else if (mouseY >= menuY + 50 && mouseY < menuY + 90) {
       showSettings = true;
     } else if (mouseY >= menuY + 100 && mouseY < menuY + 140) {
-      console.log("EXIT GAME");
-      noLoop(); 
+      console.log("Returning to Main Menu...");
+      menuState = 'main'; // Switch to main menu
+      isPaused = false;   // Unpause
+      redraw();
+      loop();             // Ensure draw() continues running
     }
   } else if (showSettings) {
     let settingsWidth = 600;
@@ -76,7 +149,10 @@ function mouseClicked() {
     let closeButtonX = settingsX + settingsWidth / 2 - 70;
     let closeButtonY = settingsY + 300;
 
-    if (mouseX >= closeButtonX && mouseX <= closeButtonX + 140 && mouseY >= closeButtonY && mouseY <= closeButtonY + 40) {
+    if (
+      mouseX >= closeButtonX && mouseX <= closeButtonX + 140 &&
+      mouseY >= closeButtonY && mouseY <= closeButtonY + 40
+    ) {
       hideSettings();
     }
   }
@@ -102,19 +178,5 @@ function mouseMoved() {
     } else {
       hovered = -1;
     }
-  }
-}
-
-function highlightMenu() {
-  if (hovered !== -1 && !showSettings) {
-    let menuWidth = 400;
-    let menuX = width / 2 - menuWidth / 2;
-
-    stroke(255, 204, 0);
-    strokeWeight(3);
-    noFill();
-    rect(menuX, hovered, menuWidth, 40);
-    strokeWeight(1);
-    stroke(0);
   }
 }

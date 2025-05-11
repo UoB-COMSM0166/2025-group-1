@@ -1,8 +1,12 @@
+// Draw the light effect with decay to simulate a fading light
 function drawLightEffectWithDecay(decay) {
+  // If currently on the second level (boss battle level), do not render the dark fog effect
+  if (currentLevel === 3) return;
+  
   const centerX = player.x + player.size / 2;
   const centerY = player.y + player.size / 2;
   
-  // 绘制衰减的光照效果
+  // Draw the decaying light effect
   const gradient = drawingContext.createRadialGradient(
     centerX, centerY, LIGHT_RADIUS * 0.05,
     centerX, centerY, LIGHT_RADIUS
@@ -19,6 +23,4 @@ function drawLightEffectWithDecay(decay) {
   drawingContext.fillStyle = gradient;
   drawingContext.fillRect(0, 0, width, height);
   drawingContext.restore();
-
-
 }
