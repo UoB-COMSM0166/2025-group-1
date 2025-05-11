@@ -3,7 +3,7 @@
 
 # Demonstration
 
-[![Watch the video](https://img.youtube.com/vi/9Rv5dqSU8yw/1.jpg)](https://youtu.be/9Rv5dqSU8yw)
+[Click here to watch the video](https://youtu.be/9Rv5dqSU8yw)
 
 [Ready for an adventure?  Click the link to start playing! 🏹💥🚀 ](https://uob-comsm0166.github.io/2025-group-1/)
 
