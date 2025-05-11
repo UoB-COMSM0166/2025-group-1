@@ -181,9 +181,7 @@ This **behavior tree–driven approach** allows for modular logic and scalable c
 
 ## Qualitative evaluation-Think Aloud method
 
-We conducted a qualitative evaluation using the Think Aloud method. During the testing sessions, participants were asked to verbalise their thoughts, feelings, and actions aloud while interacting with the game. A facilitator guided users to keep speaking throughout the process, while two observers recorded their verbal expressions, facial reactions, and emotional responses.
-
-A total of 21 players from different age groups and professional backgrounds participated in the evaluation. After the sessions, we organised the observation notes and classified common issues for analysis and revision. The main categories identified included usability confusion, navigation difficulties, mismatches between the interface and user expectations, and emotional responses such as frustration or satisfaction.
+We conducted a qualitative evaluation using the Think Aloud method. During the testing sessions, participants were asked to verbalise their thoughts, feelings, and actions aloud while interacting with the game. A facilitator guided users to keep speaking throughout the process, while two observers recorded their verbal expressions, facial reactions, and emotional responses. A total of 21 players from different age groups and professional backgrounds participated in the evaluation. 
 
 To clearly present our findings, we extracted a sample observation record from one participant, showcasing representative quotes, facial expression screenshots, and key moments of self-talk or questions raised.
 
@@ -195,6 +193,10 @@ To clearly present our findings, we extracted a sample observation record from o
 | 0:59      | Smile                           | I defeated a monster.                                                                                  | Use the mouse to aim and attack the monster 3 times and the monster dies!                       | Positive Feedback                |
 | 1:12      | Anxious, frowning, fidgety      | I'm claustrophobic and this partial light mode makes me feel depressed. Is there no full light mode?  | Operate the game character to pace the game repeatedly                                          | User Comfort & Accessibility     |
 | ...       | ...                              | ...                                                                                                    | ...                                                                                              | ...                              |
+
+After the meeting, we collated the observation records and divided the feedback into four categories: Usability & Interaction Issues, Visual & Informational Design, Accessibility & User Well-being, and Positive Feedback for optimisation.
+
+![image](https://github.com/user-attachments/assets/6a7dd874-99d6-4ec0-930e-181af343ce03)
 
 This method provided strong support for understanding users’ cognitive processes and emotional journeys, contributing effectively to the iterative improvement of our game design.
 
