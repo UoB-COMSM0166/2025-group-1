@@ -158,6 +158,7 @@ function mouseClicked() {
   }
 }
 
+
 function mouseMoved() {
   if (isPaused && !showSettings) {
     let menuWidth = 400;

@@ -8,6 +8,7 @@ class Portal {
       this.particleTimer = 0;
   }
 
+  
   // Independent rendering logic
   display() {
       if (exitImg) {

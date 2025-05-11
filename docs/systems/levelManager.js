@@ -20,6 +20,7 @@ function checkLevelTransition() {
     }
 }
 
+
 // Load and initialize a specific level by its number
 function loadLevel(levelNumber) {
     // Clear all game object arrays

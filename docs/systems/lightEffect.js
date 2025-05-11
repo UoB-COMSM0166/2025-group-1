@@ -19,6 +19,7 @@ function drawLightEffectWithDecay(decay) {
     gradient.addColorStop(t, `rgba(0, 0, 0, ${alpha})`);
   }
   
+  
   drawingContext.save();
   drawingContext.fillStyle = gradient;
   drawingContext.fillRect(0, 0, width, height);

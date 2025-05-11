@@ -12,6 +12,7 @@ function initializeGame() {
   gameOver = false;
   isDead = false;
 
+  
   playerHealth = 3;
   isPaused = false;
   showSettings = false;

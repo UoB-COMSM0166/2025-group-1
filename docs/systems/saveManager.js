@@ -5,6 +5,7 @@ function saveGame() {
     return;
   }
 
+  
   const data = {
     x: player.x,
     y: player.y,
