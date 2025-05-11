@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+<html>
+<head>
+  <!-- p5.js core library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
+  <!-- Global variables load first -->
+  <script src="globals.js"></script>
+
+  <!-- Class definitions -->
+  <script src="classes/Animation.js"></script>
+  <script src="classes/Entity.js"></script>
+  <script src="classes/Platform.js"></script>
+  <script src="classes/BreakableWall.js"></script>
+  <script src="classes/SoundManager.js"></script>
+  <script src="classes/Bullet.js"></script>
+  <script src="classes/Enemy.js"></script>
+  <script src="classes/Player.js"></script>
+  <script src="classes/Trap.js"></script>
+  <script src="classes/StoryFragment.js"></script>
+
+  <!-- Insert AccessibilityController -->
+  <script src="classes/AccessibilityController.js"></script>
+
+  <!-- System modules -->
+  <script src="systems/initializeGame.js"></script>
+  <script src="systems/lightEffect.js"></script>
+  <script src="systems/ui.js"></script>
+  <script src="systems/menu.js"></script>
+  <script src="systems/levelManager.js"></script>
+  <script src="systems/portalSystem.js"></script>
+  <script src="systems/saveManager.js"></script>
+
+  <!-- Level definitions -->
+  <script src="levels/level1.js"></script>
+  <script src="levels/level2.js"></script>
+  <script src="levels/level3.js"></script>
+  <script src="levels/level4.js"></script>
+
+  <!-- Main program loaded last -->
+  <script src="main.js"></script>
+</head>
+<body></body>
 </html>
