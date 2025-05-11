@@ -6,7 +6,7 @@ class Animation {
     this.currentFrame = 0;
     this.lastFrameTime = millis();
     this.isPlaying = true;
-    this.onComplete = null;  // 
+    this.onComplete = null;  
   }
 
   update() {
@@ -24,7 +24,7 @@ class Animation {
           this.currentFrame = this.frames.length - 1;
           this.isPlaying = false;
 
-          // ✅ 播放完成时触发回调
+          // Triggers a callback when playback is complete
           if (this.onComplete) {
             this.onComplete();
           }
@@ -33,17 +33,33 @@ class Animation {
     }
   }
 
-  display(x, y, flip = false, offsetX = 0, offsetY = 0) {
+  /**
+   * display(x, y, flip = false, offsetX = 0, offsetY = 0, scaleFactor = 1)
+   * - x, y: coordinates of the top-left corner of the map (or the reference point after the flip)
+   * - flip: if or not the map will be flipped left or right
+   * - offsetX, offsetY: additional offsets
+   * - scaleFactor: additional scaling factor (1 for original size, 2 for doubled size)
+   */
+  display(x, y, flip = false, offsetX = 0, offsetY = 0, scaleFactor = 1) {
     push();
+    let frame = this.frames[this.currentFrame];
+    
+    // Calculate the width and height when drawing
+    let w = frame.width * scaleFactor;
+    let h = frame.height * scaleFactor;
+
     if (flip) {
-      translate(x + this.frames[this.currentFrame].width, y);
+      translate(x + w, y);
       scale(-1, 1);
     } else {
-      translate(x + offsetX, y + offsetY);  // ✅ 偏移位置
+      translate(x, y);
     }
-    image(this.frames[this.currentFrame], 0, 0);
+    // Final drawing of the image
+    image(frame, offsetX, offsetY, w, h);
     pop();
   }
+
+  
 
   reset() {
     this.currentFrame = 0;
