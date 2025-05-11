@@ -177,6 +177,28 @@ This **behavior tree–driven approach** allows for modular logic and scalable c
 
 
 
+# 6. Evaluation
+
+## Qualitative evaluation-Think Aloud method
+
+We conducted a qualitative evaluation using the Think Aloud method. During the testing sessions, participants were asked to verbalise their thoughts, feelings, and actions aloud while interacting with the game. A facilitator guided users to keep speaking throughout the process, while two observers recorded their verbal expressions, facial reactions, and emotional responses.
+
+A total of 21 players from different age groups and professional backgrounds participated in the evaluation. After the sessions, we organised the observation notes and classified common issues for analysis and revision. The main categories identified included usability confusion, navigation difficulties, mismatches between the interface and user expectations, and emotional responses such as frustration or satisfaction.
+
+To clearly present our findings, we extracted a sample observation record from one participant, showcasing representative quotes, facial expression screenshots, and key moments of self-talk or questions raised.
+
+| Timestamp | Facial Expression / Emotion     | Self-talk / Question                                                                                  | User Action                                                                                     | Issue Category                   |
+|-----------|----------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
+| 0:12:00   | Smile, Amazed                   | The menu background image and the background music are great!                                         | Stop at the main menu to see the background image                                               | Positive Feedback                |
+| 0:28      | Frown, Confused                 | Why does the volume display decimals when adjusting the volume?                                       | Look up and ask the developer after trying to move the volume keys repeatedly                  | Settings Display Precision       |
+| 0:46      | Bite the lips, Confused         | How do I play? There are no instructions on how to play the game.                                     | Press A and D on the keyboard to try and figure out how to make a move                          | Lack of Instructional Visibility |
+| 0:59      | Smile                           | I defeated a monster.                                                                                  | Use the mouse to aim and attack the monster 3 times and the monster dies!                       | Positive Feedback                |
+| 1:12      | Anxious, frowning, fidgety      | I'm claustrophobic and this partial light mode makes me feel depressed. Is there no full light mode?  | Operate the game character to pace the game repeatedly                                          | User Comfort & Accessibility     |
+| ...       | ...                              | ...                                                                                                    | ...                                                                                              | ...                              |
+
+This method provided strong support for understanding users’ cognitive processes and emotional journeys, contributing effectively to the iterative improvement of our game design.
+
+
 
 ## Level Design
 
