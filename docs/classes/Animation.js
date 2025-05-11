@@ -17,6 +17,7 @@ class Animation {
       this.lastFrameTime = currentTime;
       this.currentFrame++;
 
+      
       if (this.currentFrame >= this.frames.length) {
         if (this.loop) {
           this.currentFrame = 0;

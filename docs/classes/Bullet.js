@@ -19,6 +19,7 @@ class Bullet {
       return true; // Remove the bullet if enemies data is invalid
     }
 
+    
     // Move the bullet
     this.x += this.vx;
     this.y += this.vy;

@@ -590,6 +590,7 @@ class BossEnemy extends Enemy {
       isLowHealth = true;
     }
   }
+  
 
   die() {
     this.dead = true;

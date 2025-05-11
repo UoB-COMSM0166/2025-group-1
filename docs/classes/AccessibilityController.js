@@ -40,6 +40,7 @@ class AccessibilityController {
     }
   
     
+    
     handleKeyReleased(k) {
       // This is not handled here, the move is handled by the main function
     }

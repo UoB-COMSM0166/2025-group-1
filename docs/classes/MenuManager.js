@@ -59,6 +59,7 @@ class Game {
         }
     }
 
+    
     keyPressed(key) {
         if (this.state === "menu") {
             this.menuManager.keyPressed(key);

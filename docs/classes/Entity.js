@@ -36,6 +36,7 @@ class Entity {
     }
   }
 
+  
   changeState(newState) {
     if (this.currentState !== newState) {
       this.currentState = newState;

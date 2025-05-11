@@ -22,6 +22,7 @@ class BreakableWall extends Platform {
     this.drawParentTiles = drawParentTiles;
   }
 
+  
   /**
    * Called when this wall is hit by a bullet
    */
