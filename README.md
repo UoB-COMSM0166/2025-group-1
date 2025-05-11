@@ -198,6 +198,42 @@ After the meeting, we collated the observation records and divided the feedback 
 
 ![image](https://github.com/user-attachments/assets/6a7dd874-99d6-4ec0-930e-181af343ce03)
 
+### Analysis and Optimisation
+
+We identified and addressed key issues from three categories:
+
+#### 1. Usability & Interaction
+**Problems:**  
+- Buttons required double-click  
+- Mouse response was slow  
+- Health did not reset after entering a new level  
+- Jumping couldn't be combined with left/right movement  
+
+**Solutions:**  
+- Changed to single-click operation  
+- Improved UI input responsiveness  
+- Enabled automatic health reset at new levels  
+- Updated movement logic to support directional control during jumps  
+
+#### 2. Visual & Informational Design
+**Problems:**  
+- No embedded gameplay instructions or story guide  
+- Volume and brightness showed decimals  
+- Missing turn animation  
+
+**Solutions:**  
+- Added in-game tutorials and story fragment prompts  
+- Displayed volume/brightness as integers  
+- Implemented turn animations for visual continuity  
+
+#### 3. Accessibility & User Well-being
+**Problem:**  
+- Some players felt discomfort with partial lighting, while others enjoyed it  
+
+**Solution:**  
+- Added toggle between “Full Light Mode” and “Exploration Mode”  
+
+
 This method provided strong support for understanding users’ cognitive processes and emotional journeys, contributing effectively to the iterative improvement of our game design.
 
 
