@@ -78,6 +78,11 @@ In the first week of game development, our team researched outstanding cases fro
 
 During the discussion, we thoroughly analyzed each game's core mechanics, potential development challenges, feasibility, and rationality. Meanwhile, the remaining two members compiled the strengths and weaknesses of various successful cases and shared their findings in a document during the meeting. In the end, we documented our game ideas and discussion results from the first week.
 
+</div>
+<div align="center">
+    <br>
+  <em>Table 1:game ideas and discussion results </em>
+</div>
 
 | Game Type | Game Prototypes | Game Description | Added Idea Points | Possible Challenges |
 |-----------|----------------|------------------|-------------------|---------------------|
@@ -101,18 +106,23 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif" alt="Animation" width="500">
     <br>
-  <em>Figure1:Normal levels for paper models </em>
+  <em>Figure 1:Normal levels for paper models </em>
 </div>
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation2.gif" alt="Animation" width="500">
     <br>
-  <em>Figure2:The ultimate level of paper modelling </em>
+  <em>Figure 2:The ultimate level of paper modelling </em>
 </div>
 
 
 
 ## User stories
+</div>
+<div align="center">
 
+    <br>
+  <em>Table 2:User stories for different stakeholders </em>
+</div>
 | Stakeholder               | Epic                                                  | User Story                                                                                                                                         | Acceptance Criteria                                                                                                                                   |
 |---------------------------|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Narrative-Driven Players**  | Unlockable Plot Experience                         | As a player, I want to unlock storylines by completing quests so that I can get a deeper experience of the storyline.                           | Given that I have completed a mission, When I click the “Finish” button, Then a new story segment should be displayed.                               |
@@ -259,6 +269,12 @@ This **behavior tree–driven approach** allows for modular logic and scalable c
 We conducted a qualitative evaluation using the Think Aloud method. During the testing sessions, participants were asked to verbalise their thoughts, feelings, and actions aloud while interacting with the game. A facilitator guided users to keep speaking throughout the process, while two observers recorded their verbal expressions, facial reactions, and emotional responses. A total of 21 players from different age groups and professional backgrounds participated in the evaluation. 
 
 To clearly present our findings, we extracted a sample observation record from one participant, showcasing timestamp, facial expression screenshots, and key moments of self-talk or questions raised.
+
+</div>
+<div align="center">
+    <br>
+  <em>Table 3:a detailed observation record by one partcipant </em>
+</div>
 
 | Timestamp | Facial Expression / Emotion     | Self-talk / Question                                                                                  | User Action                                                                                     | Issue Category                   |
 |-----------|----------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
@@ -491,6 +507,11 @@ From the early stages of development, we committed to sustainability and inclusi
 ## Environmental Impact
 
 **Optimizing client-side performance and resource efficiency:**
+</div>
+<div align="center">
+    <br>
+  <em>Table 4:Environment Optimization Strategies for Client Performance and Resource Efficiency </em>
+</div>
 
 | Initiative                   | Implementation                                                | Code Reference                              |
 |-----------------------------|----------------------------------------------------------------|---------------------------------------------|
@@ -501,6 +522,12 @@ From the early stages of development, we committed to sustainability and inclusi
 ## Social & Accessibility Impact
 
 **Inclusive design and ethical gameplay mechanics: empowering every player：**
+
+</div>
+<div align="center">
+    <br>
+  <em>Table 5:our Implementation for Accessibility </em>
+</div>
 
 | Feature                    | Implementation                                                                | Code Reference                            |
 | -------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------- |
@@ -518,6 +545,12 @@ Our accessibility framework follows WCAG 2.1 AA standards and embraces the “tw
 
 **Sustainable coding practices and maintainability:**
 
+</div>
+<div align="center">
+    <br>
+  <em>Table 6:the Implementation for Sustainable and Maintainability </em>
+</div>
+
 | Practice                 | Implementation                                      | Code Reference                                     |
 |--------------------------|------------------------------------------------------|----------------------------------------------------|
 | Modular Architecture     | Decoupled systems for easier maintenance             | `portalSystem.js` / Separate Portal class          |
@@ -526,6 +559,12 @@ Our accessibility framework follows WCAG 2.1 AA standards and embraces the “tw
 | Procedural Content       | Dynamic generation of platform elements             | `Platform.js` / `this.tileMap` system              |
 
 ## Key Sustainability Metrics
+
+</div>
+<div align="center">
+    <br>
+  <em>Table 7: Sustainable Metrics </em>
+</div>
 
 | Category        | Improvement                            | Verification Method                        |
 |----------------|-----------------------------------------|--------------------------------------------|
