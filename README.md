@@ -83,13 +83,22 @@ In the early stage of development, we created a paper prototype to visualize and
 
 Additionally, it gave us an early opportunity to test accessibility features, such as simulating single-arm play and evaluating rule clarity, ensuring inclusivity from the very beginning. Overall, the paper prototype provided clear development direction and significantly improved our workflow efficiency.
 
-![image](https://github.com/user-attachments/assets/72a081df-44c3-417c-a2c5-2de8ade477df) 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/72a081df-44c3-417c-a2c5-2de8ade477df" alt="Animation" width="400">
+  <br>
+  <em>Figure: paper prototype for simulation</em>
+</p>
 
 <div align="center">
-  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif" alt="Animation" width="300">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif" alt="Animation" width="400">
+    <br>
+  <em>Figure: </em>
 </div>
 <div align="center">
-  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation2.gif" alt="Animation" width="300">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation2.gif" alt="Animation" width="400">
+    <br>
+  <em>Figure: </em>
 </div>
 
 
@@ -153,7 +162,7 @@ In most 2D platformers, an FSM-based logic sequence (“player on platform → c
 
 In the main update loop, collision tests and distance calculations drive state transitions. We toggle the enemy’s speed variable between patrolSpeed and attackSpeed, and enforce platform boundaries by reversing direction at edges. This FSM-driven approach reduces collision and boundary-detection errors, ensuring enemies remain reliable threats that enhance gameplay without sacrificing stability or maintainability. Overall, this FSM pattern balances complexity and functionality, giving designers clear hooks for future tweaks.
 
-**Add Animation 3 !!**
+
 ![Animation](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation3.gif)
 
 ## Challenge 2: Intelligent Audio Switching System
@@ -528,7 +537,6 @@ One of the biggest challenges we faced was implementing the enemy AI tracking sy
 
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation7.gif" alt="Animation" width="300">
-
   <br>
   <em>Figure: Discuss about the enemy AI tracking system</em>
 </p>
