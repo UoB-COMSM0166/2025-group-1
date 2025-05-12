@@ -503,9 +503,11 @@ We held two regular meetings each week: one online meeting every Saturday via Mi
   <em>Figure: First draft of the product requirements table</em>
 </p>
 
-**Add Animation 6 !!**
-![Animation](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation6.gif)
 
+
+<div align="center">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation6.gif" alt="Animation" width="300">
+</div>
 
 Before each meeting, our product manager, Fufu, would inform the group of the agenda and time through a WhatsApp group chat. After the meeting, Fufu would summarize the key decisions and distribute updated task assignments accordingly. This structured communication kept everyone informed and aligned.
 
@@ -525,12 +527,13 @@ As the core features of the game were implemented, we began inviting users to te
 
 One of the biggest challenges we faced was implementing the enemy AI tracking system. It took us three weeks to complete, one week longer than originally planned. During this time, we held six meetings focused solely on this feature, brainstorming various solutions. The first two weeks yielded no significant breakthroughs, which was frustrating for the team. To gain fresh perspectives, we posted in developer forums and received a wide range of suggestions. One of these eventually led us in the right direction, and we implemented the tracking system much faster than expected once we found the right approach.
 
-![Animation](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation7.gif)
-**Add Animation 7 !!**
+<div align="center">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation7.gif" alt="Animation" width="300">
+</div>
 
 In addition to gameplay mechanics, our team prioritized inclusive design. We developed an accessibility mode specifically tailored for colorblind and one-handed players. This required a great deal of additional effort. To ensure our design truly improved the player experience, we arranged a coffee chat with the head of the Disability and Wellbeing organization. Their insights offered perspectives we had not previously considered and deeply informed our design choices.
 
-**无障碍图片1没显示！**
+
 
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/access1.png" 
@@ -540,7 +543,7 @@ In addition to gameplay mechanics, our team prioritized inclusive design. We dev
   <em>Figure: Initial contact email</em>
 </p>
 
-**无障碍图片2没显示！**
+
 
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/access2.png" 
