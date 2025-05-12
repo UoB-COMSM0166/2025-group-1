@@ -5,7 +5,7 @@
 
 <div align="center">
   <a href="[https://www.youtube.com/9Rv5dqSU8yw](https://youtu.be/9Rv5dqSU8yw)">
-    <img src="[https://github.com/UoB-COMSM0166/2025-group-21/raw/main/docs/assets/images/playMeButton.png](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/demo-video.png)" width="300" alt="Watch Our Video!">
+    <img src="(https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/demo-video.png)" width="300" alt="Watch Our Video!">
   </a>
   <p><strong>🎥&nbsp;&nbsp;&nbsp;&nbsp;Demo Video&nbsp;&nbsp;&nbsp;&nbsp;🎥</strong></p>
 </div>
