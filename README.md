@@ -533,7 +533,7 @@ In addition to gameplay mechanics, our team prioritized inclusive design. We dev
 **无障碍图片1没显示！**
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7bddbe76-4e34-4275-b9ed-b1bc45cba938" 
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/access1.png" 
        alt="Initial Contact Email" 
        width="300" />
   <br>
@@ -543,7 +543,7 @@ In addition to gameplay mechanics, our team prioritized inclusive design. We dev
 **无障碍图片2没显示！**
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4661f9a4-76d6-48d5-a8e0-0129e315c94c" 
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/access2.png" 
        alt="Reply from Tristan" 
        width="300" />
   <br>
