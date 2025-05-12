@@ -235,8 +235,160 @@ We identified and addressed key issues from three categories:
 **Solution:**  
 - Added toggle between “Full Light Mode” and “Exploration Mode”  
 
-
 This method provided strong support for understanding users’ cognitive processes and emotional journeys, contributing effectively to the iterative improvement of our game design.
+
+
+## Quantitative evaluation-NASA TLX、SUS
+
+### NASA TLX
+
+To evaluate the cognitive workload and system usability of our game's two primary modes—Simple Mode and Exploration Mode—we conducted a quantitative study using two standardized instruments:
+
+- NASA Task Load Index (Raw TLX) – to assess subjective workload
+
+- System Usability Scale (SUS) – to measure perceived system usability
+
+- Wilcoxon Signed-Rank Test
+
+Twelve experienced participants (each with 3–5 years of gaming experience) took part in the study. To minimize learning and order effects, half of the participants started with the Simple Mode while the other half began with the Exploration Mode. After completing each mode, participants filled out both the TLX and SUS questionnaires.
+
+We focused on the six dimensions of NASA TLX for a focused analysis, with the sub-dimensions of Frustration and Performance showing greater fluctuations in data compared to the other dimensions across modes.
+
+Figure shows that players reported significantly higher frustration in the Exploration Mode than in the Simple Mode. The average frustration score rose from approximately 30 to over 55.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/15a67a36-fb4d-4464-bc92-5a6e4ece82a9" width="400"/>
+  <p><em>Figure: Average Frustration Score by Mode</em></p>
+</div>
+
+Figure further reveals that the frustration scores in the Exploration Mode are not only higher on average, but also more variable, with several participants reporting very high values.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/adfef191-976c-44d8-8517-b25f1b168c8c" width="400"/>
+  <p><em>Figure: Distribution of Frustration Scores by Mode</em></p>
+</div>
+
+These results suggest that while Exploration Mode adds challenge, it also increases emotional stress and uncertainty.
+
+
+Figure shows a reverse trend in perceived performance: the average score decreased in the Exploration Mode compared to the Simple Mode.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/301b92cd-b9ca-433a-8cb8-5a19b30bdc1f" width="400"/>
+  <p><em>Figure: Average Performance Score by Mode</em></p>
+</div>
+
+Figure  confirms this drop in user-reported success, with more low and mid-range scores under the Exploration condition.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5ca20c1c-bbf5-4897-bf7e-ebcb58d5360c" width="400"/>
+  <p><em>Figure: Distribution of Performance Scores by Mode</em></p>
+</div>
+
+These results validate the hypothesis that the Exploration Mode leads to **higher frustration** and **lower perceived success**, indicating potential usability or pacing issues in its current form.
+
+### SUS – System Usability Score Consistency
+
+In contrast, the System Usability Scale (SUS) results suggest that both modes are similarly usable.
+
+Despite the gameplay differences, participants consistently rated both modes highly.
+
+In the SUS average bar chart and distribution plots (previously presented as Figure 2 & 4 in earlier section), both modes achieved scores well above the industry benchmark of 68, with no significant difference between them (p > 0.4).
+
+These results confirm that the perceived usability of the interface and system design remains stable, regardless of gameplay variation. The only visual difference—Screen Brightness Range—did not influence usability ratings.
+
+### Statistical Analysis: Wilcoxon Signed-Rank Tests
+
+To evaluate the statistical significance of subjective differences between game modes, we conducted Wilcoxon Signed-Rank Tests on key metrics:
+
+<div align="center">
+
+### Statistical Analysis: Wilcoxon Signed-Rank Tests
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Mean (Simple)</th>
+      <th>Mean (Exploration)</th>
+      <th>p-value</th>
+      <th>Significance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total NASA TLX Score</td>
+      <td>~46.2</td>
+      <td>~52.6</td>
+      <td><strong>0.00049</strong></td>
+      <td>Significant</td>
+    </tr>
+    <tr>
+      <td>Frustration Score</td>
+      <td>~30.3</td>
+      <td>~55.3</td>
+      <td><strong>0.00049</strong></td>
+      <td>Significant</td>
+    </tr>
+    <tr>
+      <td>Performance Score</td>
+      <td>~74.1</td>
+      <td>~61.7</td>
+      <td><strong>0.00049</strong></td>
+      <td>Significant</td>
+    </tr>
+    <tr>
+      <td>SUS Score</td>
+      <td>~76.2</td>
+      <td>~75.6</td>
+      <td>0.476</td>
+      <td>Not significant</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+These results confirm that:
+
+- Exploration Mode leads to significantly higher frustration (p < 0.001)
+
+- Perceived performance significantly drops in Exploration Mode (p < 0.001)
+
+- Overall workload increases (p < 0.001)
+
+- However, usability remains consistent between modes (p > 0.05)
+
+### Design Implications
+
+While players can navigate and operate both modes with ease, the increased frustration and lowered performance in Exploration Mode highlight areas for improvement:
+
+- Smooth the difficulty curve in Exploration Mode
+
+- Provide better onboarding or optional guidance for advanced mechanics
+
+- Consider adaptive systems for accessibility and engagement
+
+### Testing
+
+To ensure that our game behaved correctly and remained stable throughout development, we implemented both white-box and black-box testing strategies. These two approaches allowed us to validate both the internal logic and the overall gameplay experience.
+
+#### White-box
+
+We conducted white-box testing during development, focusing on player movement, enemy AI, and game state logic.
+Using browser debugging tools and console logs, we manually verified that key functions like collision handling and input response worked as intended.
+While we didn’t adopt a full unit testing framework, we regularly inspected code during each sprint to catch logic errors early.
+
+#### Black-box
+
+Due to our game’s visual and interactive nature, black-box testing was more efficient at catching real gameplay issues. So black-box testing was our primary QA method. Team members play-tested new features without looking at the code, checking for:
+
+- Visual glitches, broken controls, missing feedback
+
+- Gameplay bugs or unexpected behavior
+
+Each developer used a Git feature branch, and new content was tested in isolation before merging. Weekly sprints included regular play sessions, ensuring consistent quality and stability.
 
 
 
