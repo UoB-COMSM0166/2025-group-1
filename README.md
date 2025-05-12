@@ -4,11 +4,16 @@
 # Demonstration
 
 <div align="center">
-  <a href="[https://www.youtube.com/9Rv5dqSU8yw](https://youtu.be/9Rv5dqSU8yw)">
-    <img src="(https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/demo-video.png)" width="300" alt="Watch Our Video!">
+  <a href="https://youtu.be/9Rv5dqSU8yw" target="_blank" rel="noopener">
+    <img
+      src="https://raw.githubusercontent.com/UoB-COMSM0166/2025-group-1/main/picture/demo-video.png"
+      width="300"
+      alt="Watch Our Video!"
+    >
   </a>
   <p><strong>🎥&nbsp;&nbsp;&nbsp;&nbsp;Demo Video&nbsp;&nbsp;&nbsp;&nbsp;🎥</strong></p>
 </div>
+
 
 [Ready for an adventure?  Click the link to start playing! 🏹💥🚀 ](https://uob-comsm0166.github.io/2025-group-1/)
 
