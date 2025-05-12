@@ -2,6 +2,10 @@
 2025 COMSM0166 group 1
 
 # Demonstration
+<div align="center">
+    <a href="https://uob-comsm0166.github.io/2025-group-1/"><img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/play-game.png" width="1000"></a>
+    <p><br>💥&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://uob-comsm0166.github.io/2025-group-1/">CLICK HERE TO PLAY!</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;🚀</p>
+</div>
 
 <div align="center">
   <a href="https://youtu.be/9Rv5dqSU8yw" target="_blank" rel="noopener">
@@ -14,8 +18,6 @@
   <p><strong>🎥&nbsp;&nbsp;&nbsp;&nbsp;Demo Video&nbsp;&nbsp;&nbsp;&nbsp;🎥</strong></p>
 </div>
 
-
-[Ready for an adventure?  Click the link to start playing! 🏹💥🚀 ](https://uob-comsm0166.github.io/2025-group-1/)
 
 # 📚 Table of Contents
 
