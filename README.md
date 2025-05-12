@@ -125,6 +125,19 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 
 ## Use case diagrams
 
+The use case diagram illustrates the core functional modules of the game system, including menu management, gameplay operations, special modes, and accessibility settings.
+
+Menu Management: Provides game settings and control, including options for brightness, volume, contrast, and bold font. It supports pausing the game, level selection, skipping levels, and mode switching (such as easy mode, explosion mode, and accessibility mode).
+
+Gameplay Operations: Includes basic character actions such as walking and jumping, shooting (extended to killing enemies), collecting story fragments, level transitions, and music system adjustments.
+
+Interaction Relationships: Represented through include and extend to indicate the associations and dependencies between functional modules.
+
+<p align="center">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/use%20case%20diagram.png" alt="Animation" width="500">
+  <br>
+  <em>Figure3: use case diagram </em>
+</p>
 
 # 4. Design
 
@@ -149,10 +162,20 @@ Level elements, entities, and systems are decoupled via clear interfaces (update
 Components like Portal and Switch notify Main through boolean returns or callbacks, enabling loosely coupled level control.
 ![Class diagram](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/class%20diagram.png)
 
+<p align="center">
+  <br>
+  <em>Figure4: Class diagrams </em>
+</p>
 
 ## Sequence Diagrams
 The sequence diagram below illustrates that players can adjust settings or view instructions and then return after clicks “Start” on the main menu. Next, they proceed through mode selection and level selection into a story cutscene. From there they enter the main game loop—each frame executes, in order: enemy updates, player input processing, item/trap detection, and bullet collision checks—until either the victory or game-over screen appears, at which point the player can press a key to retry or continue with the next part of the story.
+
 ![Sequence Diagram](https://github.com/user-attachments/assets/10c5c9d7-856f-4b09-b39e-35385a545b16)
+
+<p align="center">
+  <br>
+  <em>Figure5: Sequence diagrams </em>
+</p>
 
 
 # 5. Implementation
@@ -193,7 +216,7 @@ In the main update loop, collision tests and distance calculations drive state t
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation3.gif" alt="Animation" width="500">
   <br>
-  <em>Figure: The player enters the platform where the monster is located< </em>
+  <em>Figure6: The player enters the platform where the monster is located </em>
 </p>
 
 ## Challenge 2: Intelligent Audio Switching System
@@ -223,7 +246,7 @@ This **behavior tree–driven approach** allows for modular logic and scalable c
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation4.gif" alt="Animation" width="500">
   <br>
-  <em>Figure: Sound effect switch when the player has only one drop of blood left </em>
+  <em>Figure7: Sound effect switch when the player has only one drop of blood left </em>
 </p>
 
 
@@ -249,7 +272,7 @@ To clearly present our findings, we extracted a sample observation record from o
        alt="Animation"
        width="500" />
   <br>
-  <em>Figure: Gamers use think aloud method to test gameplay fragment </em>
+  <em>Figure8: Gamers use think aloud method to test gameplay fragment </em>
 </p>
 
 
@@ -259,7 +282,7 @@ After the meeting, we collated the observation records and divided the feedback 
        alt="Animation"
        />
   <br>
-  <em>Figure: four categories of feedback</em>
+  <em>Figure9: four categories of feedback</em>
 </p>
 
 
@@ -338,14 +361,14 @@ Figure shows a reverse trend in perceived performance: the average score decreas
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/301b92cd-b9ca-433a-8cb8-5a19b30bdc1f" width="400"/>
-  <p><em>Figure: Average Performance Score by Mode</em></p>
+  <p><em>Figure10: Average Performance Score by Mode</em></p>
 </div>
 
 Figure  confirms this drop in user-reported success, with more low and mid-range scores under the Exploration condition.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/5ca20c1c-bbf5-4897-bf7e-ebcb58d5360c" width="400"/>
-  <p><em>Figure: Distribution of Performance Scores by Mode</em></p>
+  <p><em>Figure11: Distribution of Performance Scores by Mode</em></p>
 </div>
 
 These results validate the hypothesis that the Exploration Mode leads to **higher frustration** and **lower perceived success**, indicating potential usability or pacing issues in its current form.
@@ -460,7 +483,7 @@ From the early stages of development, we committed to sustainability and inclusi
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6f824b9a-3f78-4709-a3c3-9a5114564306" alt="可持续1" width="600"/>
     <br>
-  <em>Figure: sustainability framework for game development</em>
+  <em>Figure12: sustainability framework for game development</em>
 </p>
 
 ## Environmental Impact
@@ -558,7 +581,7 @@ We held two regular meetings each week: one online meeting every Saturday via Mi
 <p align="center">
   <img width="1091" alt="Product Requirements Table" src="https://github.com/user-attachments/assets/826ac3b0-f747-4dcd-bd8c-f0758b9df6d0" />
   <br>
-  <em>Figure: First draft of the product requirements table</em>
+  <em>Figure13: First draft of the product requirements table</em>
 </p>
 
 
@@ -566,7 +589,7 @@ We held two regular meetings each week: one online meeting every Saturday via Mi
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation6.gif" alt="Animation" width="450">
     <br>
-  <em>Figure: in-person meeting on Tuesday</em>
+  <em>Figure14: in-person meeting on Tuesday</em>
 </div>
 
 Before each meeting, our product manager, Fufu, would inform the group of the agenda and time through a WhatsApp group chat. After the meeting, Fufu would summarize the key decisions and distribute updated task assignments accordingly. This structured communication kept everyone informed and aligned.
@@ -576,7 +599,7 @@ Before each meeting, our product manager, Fufu, would inform the group of the ag
        alt="WhatsApp group message snippet"
        width="300" />
   <br>
-  <em>Figure: WhatsApp group message snippet</em>
+  <em>Figure15: WhatsApp group message snippet</em>
 </p>
 
 To manage our workflow and ensure transparency, we used a Kanban board to track task progress. Each task was clearly defined and assigned, allowing us to visualize the overall status of the project at a glance. This tool helped us remain organized and responsive to any bottlenecks that emerged during development.
@@ -590,7 +613,7 @@ One of the biggest challenges we faced was implementing the enemy AI tracking sy
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation7.gif" alt="Animation" width="400">
   <br>
-  <em>Figure: Discuss about the enemy AI tracking system</em>
+  <em>Figure16: Discuss about the enemy AI tracking system</em>
 </p>
 
 
@@ -603,7 +626,7 @@ In addition to gameplay mechanics, our team prioritized inclusive design. We dev
        alt="Initial Contact Email" 
        width="600" />
   <br>
-  <em>Figure: Initial contact email</em>
+  <em>Figure17: Initial contact email</em>
 </p>
 
 
@@ -613,7 +636,7 @@ In addition to gameplay mechanics, our team prioritized inclusive design. We dev
        alt="Reply from Tristan" 
        width="600" />
   <br>
-  <em>Figure: Tristan's reply email</em>
+  <em>Figure18: Tristan's reply email</em>
 </p>
 
 This system of regular meetings, clearly defined roles, structured communication, user feedback, and disciplined code management created a productive and cohesive working environment. Through effective collaboration, user engagement, and inclusive practices, we were able to deliver a high-quality game while continuously learning and adapting as a team.
