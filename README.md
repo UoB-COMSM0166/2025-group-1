@@ -3,8 +3,7 @@
 
 # Demonstration
 
-[![Demo Video](./picture/demo-vidieo-play.png)]([https://your-site.com/demo-video](https://youtu.be/9Rv5dqSU8yw))
-🎥 **[Demo Video]([https://your-site.com/demo-video](https://youtu.be/9Rv5dqSU8yw))** 🎥
+[![🎥 **[Demo Video]** 🎥](./picture/demo-vidieo-play.png)]([https://your-site.com/demo-video](https://youtu.be/9Rv5dqSU8yw))
 
 [Ready for an adventure?  Click the link to start playing! 🏹💥🚀 ](https://uob-comsm0166.github.io/2025-group-1/)
 
