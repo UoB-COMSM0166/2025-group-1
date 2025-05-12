@@ -451,17 +451,17 @@ Our accessibility framework follows WCAG 2.1 AA standards and embraces the “tw
 
 ## High Contrast Mode: Designed for Everyone
 
-Global Toggle: One-click toggle in settings, no restart required—updates UI immediately across all screens.
+- Global Toggle: One-click toggle in settings, no restart required—updates UI immediately across all screens.
 
-Menus & Backgrounds: UI adapts between dark gray and pure black backgrounds for better contrast visibility.
+- Menus & Backgrounds: UI adapts between dark gray and pure black backgrounds for better contrast visibility.
 
-Accessibility Integration: Enabling Accessibility Mode automatically applies High Contrast with maximum brightness.
+- Accessibility Integration: Enabling Accessibility Mode automatically applies High Contrast with maximum brightness.
 
-HUD & Prompts: Vital UI elements (health bars, icons, game messages) use bold white or bright red for legibility.
+- HUD & Prompts: Vital UI elements (health bars, icons, game messages) use bold white or bright red for legibility.
 
-Real-Time Response: Instant effect upon toggling—maintains gameplay flow and immersion.
+- Real-Time Response: Instant effect upon toggling—maintains gameplay flow and immersion.
 
-Future Expansion: Plans include screen reader support, speech controls, and audio cues for blind users.
+- Future Expansion: Plans include screen reader support, speech controls, and audio cues for blind users.
 
 
 # 8. Privacy
