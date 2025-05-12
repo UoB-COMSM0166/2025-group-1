@@ -465,54 +465,34 @@ Our accessibility framework follows WCAG 2.1 AA standards and embraces the “tw
 
 # 8. Privacy
 
+An analysis of the game's p5.js source code highlights multiple privacy concerns:
+
+## Key Issues
+
+- **Implicit Data Collection:**  
+  Preferences like sound are stored using `localStorage.getItem("sound")` and updated silently via `setItem()`, without any user notification or consent.
+
+- **No Data Deletion or Opt-Out:**  
+  Players cannot delete their stored data or opt out of persistent storage. This limits user control and violates principles of data agency.
+
+- **No Policy Disclosure:**  
+  There is no privacy policy, prompt, or explanation regarding data collection—raising ethical concerns about informed consent.
+
+- **One-Way Storage Model:**  
+  While `localStorage` is low-risk, using it without context erodes trust—especially if combined with future tracking or analytics.
+
+- **Offline Game, Persistent Tracking:**  
+  Despite no login system, the game stores behavioral settings permanently. Future multiplayer or analytics features may risk non-compliance with GDPR/CCPA.
+
+## Recommendation
+
+> Developers should prioritize **transparency**, **data minimization**, and **user control** from the early design phase.  
+> Privacy is not an afterthought—it’s a foundation for ethical and responsible game design.
+
 # 9. Process
 
 
 # 10. Conclusion
-
-## Level Design
-
-In our game design, we firmly adhere to the principle of “User Control and Freedom.” We implemented a level selection system that allows players to freely choose which stage to play, preventing frustration from getting stuck on a single difficult level. Additionally, players can quickly access the settings menu by pressing the "P" key or clicking the clearly visible pause button in the UI, providing an immediate way to exit or restart. 
-
-This design enhances operational flexibility and ensures that users can recover from mistakes or change their decisions without being locked into a single path, resulting in a smoother and more enjoyable gameplay experience.
-
-
-## Game Testing Summary
-
-Our game is a 2D platformer adventure featuring procedurally designed levels, partial lighting environments, and progressive difficulty including boss battles. To ensure quality, we adopted a systematic Software Quality Testing (SQT) approach combining both Quality Assurance (QA) and Quality Control (QC) practices.
-
-During QA, we established coding standards, Git version control conventions, and regular peer reviews to prevent defects early in development. We also held design walkthroughs to confirm gameplay logic, player controls, and accessibility flows before implementation.
-
-In QC, we conducted extensive functional testing, including level design validation. Early versions of our maps were found to be unsuitable in pacing and layout. To address this, developers manually playtested each level to iteratively refine the platform distribution, enemy placement, and lighting conditions—resulting in a more engaging and playable experience. 
-
-We also carried out difficulty balancing tests. Our game now offers two distinct modes: a **“Normal Mode”** with fully lit environments for beginners, and a **“Exploration Mode”** where players navigate in restricted visibility, creating a true challenge for experienced players. This mode-based differentiation was key in enhancing overall player satisfaction.
-
-At the character control level, we identified early issues with weapon alignment and player orientation. Initially, the gun rotation was disconnected from the player’s facing direction, causing confusion. We resolved this by binding the player’s orientation to the mouse-controlled weapon direction, achieving a more intuitive and responsive control experience.
-
-Furthermore, we took game accessibility seriously. We collaborated with a local disability support organization in Bristol to conduct usability testing with players who have motor or visual impairments. Their feedback revealed key flaws in our initial accessibility concept, prompting revisions such as improved one-handed controls, clearer interface contrast, and simplified key mappings. These improvements greatly enhanced the inclusiveness and practicality of our design.
-
-We also ran regression testing after each update to verify that new changes did not break existing functionality, and performed cross-platform compatibility tests across major browsers. Bugs were tracked and resolved using GitHub Issues with a structured test–fix–verify workflow.
-
-Through this structured and iterative process, we enhanced game stability, improved player experience across skill levels, and delivered a more accessible and polished final product.
-
-
-
-
-## Inclusive Game Accessibility Design: Empowering Every Player
-
-Our 2D platform shooting game is designed with the belief that games should be accessible to all, regardless of physical, sensory, or cognitive ability. Rooted in the principles of digital accessibility, our design is guided by WCAG standards, the “two golden rules” of accessibility (keyboard navigation and screen reader compatibility), and Tim Berners-Lee’s ethos of universal access.
-
-A key feature of our accessibility approach is the auto-aiming mode, triggered by holding the Shift key, which causes the player’s weapon to rotate automatically in a 360-degree loop. This eliminates the need for precise directional inputs or mouse control, allowing players to lock aim and fire using only the Space key. This system supports one-handed gameplay and mouse-free operation, providing a more inclusive experience for players with limited motor functions.
-
-In standard mode, players can jump using either W or Space, offering flexible control schemes. This dual mapping ensures that users with different physical abilities can perform critical actions comfortably.
-
-We have implemented a high-contrast visual mode tailored for players with low vision or color blindness, using bold color separation and clear outlines to improve visibility of game elements. This mode ensures better readability of in-game interfaces such as the HUD, player character, obstacles, and navigation cues.
-
-While full screen reader and blind player support is not yet implemented, we have begun exploring future enhancements to better serve blind and visually impaired players. For example, we plan to incorporate audio feedback cues (e.g., rhythmic tones for aiming rotation, distinct sounds for jump, shooting, and exit proximity), and ARIA live regions to support screen reader announcements of gameplay events. Our HTML5 canvas interface is structured with semantic labels and regions in anticipation of such features. These are part of our roadmap to ensure screen reader compatibility and meaningful feedback for non-visual play.
-
-We also aim to support players with severe physical disabilities, including those unable to use their hands, by researching voice command systems (using Web Speech API), eye-tracking controls, and single-switch scanning interfaces. These technologies, while complex, are critical to our long-term vision of universal accessibility.
-
-From development to deployment, accessibility is woven into our game’s DNA—not as an add-on, but as a foundational philosophy. By implementing features like customizable key bindings, one-handed control schemes, and visual contrast options, we are laying the groundwork for a game that welcomes all. We recognize that accessibility is an ongoing process, and our commitment is to iterate, test with real users, and expand support to reflect the diverse needs of the player community.
 
 
 
@@ -527,72 +507,6 @@ Additionally, the game lacks mechanisms for handling user profiles or login sess
 
 Critically, this case study reflects a broader issue in small- to mid-scale game development: privacy is often deprioritized in favor of functionality and aesthetics. Developers may unintentionally introduce privacy risks simply by failing to implement basic data governance measures. By adopting principles such as data minimization, user consent, and transparency early in the design phase, developers can create experiences that are not only enjoyable but also ethically sound. Respecting user privacy should not be treated as an afterthought, but as a central tenet of responsible game design in the digital era.
 
-# Sustainability, Ethics & Accessibility 
-
-At the early stage of development, we adopted a sustainability-conscious design approach by setting the game's default screen brightness to 50%. This decision aims to reduce energy consumption without compromising the core visual experience. Players are still given the flexibility to adjust the brightness according to their personal preferences, striking a balance between user comfort and energy efficiency.
-
-## 🌍 Environmental Impact
-**Optimized client-side performance and resource efficiency**
-
-| Initiative | Implementation Evidence | Code Reference |
-|------------|--------------------------|----------------|
-| **Local Storage Optimization** | Reduces server requests by storing progress locally | `saveManager.js`<br>`localStorage.setItem("saveData")` |
-| **Dynamic Particle Limiting** | Reduces GPU load through frame-controlled effects | `portalSystem.js`<br>`if (frameCount % 6 === 0)` |
-| **Efficient Animation Handling** | Reuses sprite frames to minimize texture swaps | `Animation.js`<br>`this.frames` array reuse |
-| **Light Effect Optimization** | Adaptive rendering based on gameplay context | `lightEffect.js`<br>`drawLightEffectWithDecay()` |
-
-## 👥 Social Impact 
-**Inclusive design and ethical gameplay mechanics.**
-
-| Feature | Implementation Evidence | Code Snippet |
-|---------|-------------------------|--------------|
-| **High-Contrast UI** | Enhanced visibility for color-blind players | `ui.js`<br>`drawHealth()` system |
-| **Accessibility Controller** | Space-based shooting for motor accessibility | `AccessibilityController.js`<br>`gunAngle auto-rotation` |
-| **Localized Privacy** | GDPR-compliant local data storage | `saveManager.js`<br>`localStorage usage` |
-| **Addiction Mitigation** | Clear pause/exit prompts | `ui.js`<br>`text("Press R to Restart")` |
-
-## 🛠 Technical Impact
-**Sustainable coding practices and maintainability**
-
-| Practice | Implementation Evidence | Code Reference |
-|----------|-------------------------|----------------|
-| **Modular Architecture** | Decoupled systems for easy maintenance | `portalSystem.js`<br>Separate Portal class |
-| **Energy-Efficient Collision** | Optimized AABB collision detection | `Player.js`<br>`handleHorizontalCollisions()` |
-| **Memory Management** | Automatic cleanup of game objects | `initializeGame.js`<br>`platforms = []` reset |
-| **Procedural Content** | Dynamic platform generation | `Platform.js`<br>`this.tileMap` system |
-
----
-
-### Key Sustainability Metrics
-| Category | Improvement | Verification Method |
-|----------|-------------|---------------------|
-| GPU Load | 20-30% reduction | Frame time analysis via Chrome DevTools |
-| Memory Usage | 35% less peak usage | Chrome Memory Profiler |
-| Accessibility | Full WCAG 2.1 AA compliance | Axe DevTools audit |
-| Code Reuse | 60% shared components | CodeClimate duplication analysis |
-
-
-# High contrast：friendly to everyone
-
-In this game, High Contrast mode is woven through every core system to give visually impaired players the clearest possible experience in any screen or scenario:
-
-## Global Toggle & Settings
-A single “High Contrast” switch in the Settings menu lets players turn the mode on or off at any time. The game listens to this flag and updates the entire UI immediately—no restart or reload required.
-
-## Menus & Backgrounds
-Main menus and pause screens swap their background between dark gray and pure black depending on the contrast setting. This maximizes the difference between text, buttons, and highlights, making menu options instantly legible even in very bright or dim environments.
-
-## Accessibility Mode Integration
-Selecting Accessibility Mode automatically enables High Contrast (and sets brightness to maximum). From story panels to in‑level views, every frame renders with the strongest foreground‑to‑background separation, so low‑vision players never miss critical information.
-
-## HUD & On‑Screen Prompts
-Health bars, heart icons, game‑over messages, and all on‑screen text cues use pure white, bright red, or other highly saturated accent colors. In High Contrast mode, these elements leap off the background, ensuring vital status and system prompts are unmistakable during gameplay.
-
-## Interactive Feedback & Transitions
-Door‑exit hints, level‑transition text, and “Press E to continue” prompts all employ the boldest possible colors. Semi‑transparent overlays and solid‑color masks further sharpen these cues, guiding players quickly to their next interaction.
-
-## Instant, Seamless Response
-Every change to High Contrast takes effect on the fly—whether toggled manually or triggered by entering Accessibility Mode—so there’s no break in gameplay. The UI palette updates smoothly and consistently across all screens, maintaining immersion and flow.
 
 ### Design
 
@@ -642,26 +556,3 @@ You can delete this section in your own repo, it's just here for information. in
 
   - Is your repo clearly organised? 
   - Is code well commented throughout?
-
-ABOUT CHALLANGE OF ENEMY AI
-
-Overview
-The primary goal of this enemy AI modification is to provide a dynamic, responsive challenge by enabling enemy characters to actively track and chase the player when on the same platform. Enemies will remain in a passive idle state until the player lands on their platform. Once activated, they will switch to a high-speed chase mode to close the distance and then execute an attack when nearby. If the player jumps off or leaves the platform, the enemy will not pursue off-platform, instead reverting to a patrol state after a short delay.
-
-Behavior States
-The enemy will transition through a series of states during gameplay:
-• Idle: Initially, the enemy remains in a stationary or low-mobility patrol mode on the platform. In this state, the enemy performs background animations and minor movements that simulate waiting or patrolling within its confined area.
-• Chase: When the player lands on the same platform, the enemy transitions from idle to a chase state. In this mode, the enemy’s movement speed increases substantially to follow the player horizontally. The velocity is adjusted to ensure that once it gets close enough, it can switch into an attack mode.
-• Attack: Upon reaching proximity with the player, the enemy will stop its forward run and perform an attack animation or sequence. This could include a lunge or swinging motion, which inflicts damage if the collision conditions are met.
-• Return/Patrol: If the player jumps off the enemy’s platform, the enemy should not continue its pursuit. Instead, it maintains its presence on the original platform, waits for a few seconds, and then reverts to its original patrol or idle state. This constraint simplifies enemy logic, ensuring that the enemy cannot leave its designated platform area, which also minimizes potential errors in collision and platform boundary detection.
-
-Triggering Conditions and Detection
-To manage the transitions effectively:
-• Platform Detection: A collision or overlap function will verify if the player is on the same platform as the enemy. This can be implemented by checking if the player’s bounding box overlaps or is sufficiently near the platform boundaries where the enemy resides.
-• Distance Check: A dynamic check using the distance between the player and enemy verifies when the enemy should switch from chase to attack mode. The threshold for attack is carefully chosen to allow the enemy sufficient time to perform an attack animation.
-• State Timers: A brief countdown timer is utilized when the player leaves the platform. Only if the player remains absent for the defined period does the enemy switch back to its default patrol behavior.
-
-Implementation Considerations
-In the game loop, the enemy’s update function will integrate these state transitions. Based on collision tests and distance calculations, the enemy modifies its speed variable—normal speed in patrol mode and a higher ‘attackSpeed’ in chase mode. The enemy’s horizontal movement logic should be adjusted to consider platform boundaries, ensuring it reverses direction upon reaching a platform edge.
-
-This design ensures that the enemy AI presents a credible threat when the player is vulnerable on a platform, while also keeping behaviors predictable and confined, avoiding unpredictable off-platform pursuits. By combining state management, collision detection, and temporal delays, the chase functionality delivers a challenging yet controlled mechanic that enhances the gameplay experience in the platformer.
