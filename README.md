@@ -501,10 +501,17 @@ We held two regular meetings each week: one online meeting every Saturday via Mi
   <em>Figure: First draft of the product requirements table</em>
 </p>
 
-
-
+**Add Animation 6 !!**
 
 Before each meeting, our product manager, Fufu, would inform the group of the agenda and time through a WhatsApp group chat. After the meeting, Fufu would summarize the key decisions and distribute updated task assignments accordingly. This structured communication kept everyone informed and aligned.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ad4a471f-7e0c-44a3-948a-1107004944d4"
+       alt="WhatsApp group message snippet"
+       width="300" />
+  <br>
+  <em>Figure: WhatsApp group message snippet</em>
+</p>
 
 
 To manage our workflow and ensure transparency, we used a Kanban board to track task progress. Each task was clearly defined and assigned, allowing us to visualize the overall status of the project at a glance. This tool helped us remain organized and responsive to any bottlenecks that emerged during development.
