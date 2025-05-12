@@ -29,7 +29,7 @@
 8. [Privacy](#8-privacy)
 9. [Process](#9-process)
 10. [Conclusion](#10-conclusion)
-11. [Contribution Statement](#11-contribution statement)
+11. [Contribution Statement](#11-contribution-statement)
 
 
 
@@ -98,7 +98,7 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif" alt="Animation" width="500">
     <br>
-  <em>Figure:Normal levels for paper models< </em>
+  <em>Figure:Normal levels for paper models </em>
 </div>
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation2.gif" alt="Animation" width="500">
