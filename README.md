@@ -495,6 +495,13 @@ Our team adopted an agile development methodology throughout the game developmen
 
 We held two regular meetings each week: one online meeting every Saturday via Microsoft Teams and one in-person meeting every Tuesday. The Saturday meetings focused on reviewing development progress and addressing technical challenges that individual members encountered. Tuesday meetings served as retrospective sessions where we reflected on past difficulties, refined goals for the next sprint, and discussed whether any requirements or priorities needed to be adjusted.
 
+<p align="center">
+  <img width="1091" alt="Product Requirements Table" src="https://github.com/user-attachments/assets/826ac3b0-f747-4dcd-bd8c-f0758b9df6d0" />
+  <br>
+  <em>Figure: First draft of the product requirements table</em>
+</p>
+
+
 
 
 Before each meeting, our product manager, Fufu, would inform the group of the agenda and time through a WhatsApp group chat. After the meeting, Fufu would summarize the key decisions and distribute updated task assignments accordingly. This structured communication kept everyone informed and aligned.
