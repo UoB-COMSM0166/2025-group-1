@@ -491,6 +491,22 @@ An analysis of the game's p5.js source code highlights multiple privacy concerns
 
 # 9. Process
 
+Our team adopted an agile development methodology throughout the game development project, which significantly contributed to efficient collaboration and steady progress. Each member assumed specific roles based on their individual strengths. This role-based distribution enabled us to leverage everyone’s expertise and ensured accountability within the team.
+
+We held two regular meetings each week: one online meeting every Saturday via Microsoft Teams and one in-person meeting every Tuesday. The Saturday meetings focused on reviewing development progress and addressing technical challenges that individual members encountered. Tuesday meetings served as retrospective sessions where we reflected on past difficulties, refined goals for the next sprint, and discussed whether any requirements or priorities needed to be adjusted.
+
+
+
+Before each meeting, our product manager, Fufu, would inform the group of the agenda and time through a WhatsApp group chat. After the meeting, Fufu would summarize the key decisions and distribute updated task assignments accordingly. This structured communication kept everyone informed and aligned.
+
+
+To manage our workflow and ensure transparency, we used a Kanban board to track task progress. Each task was clearly defined and assigned, allowing us to visualize the overall status of the project at a glance. This tool helped us remain organized and responsive to any bottlenecks that emerged during development.
+
+
+
+
+
+
 
 # 10. Conclusion
 
