@@ -81,7 +81,7 @@ During the discussion, we thoroughly analyzed each game's core mechanics, potent
 </div>
 <div align="center">
     <br>
-  <em>Table 1:game ideas and discussion results </em>
+  <em>Table 1:Game ideas and discussion results </em>
 </div>
 
 | Game Type | Game Prototypes | Game Description | Added Idea Points | Possible Challenges |
@@ -121,8 +121,9 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 <div align="center">
 
     <br>
-  <em>Table 2:User stories for different stakeholders </em>
+  <em>Table 2:User Stories for Different Stakeholders </em>
 </div>
+
 | Stakeholder               | Epic                                                  | User Story                                                                                                                                         | Acceptance Criteria                                                                                                                                   |
 |---------------------------|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Narrative-Driven Players**  | Unlockable Plot Experience                         | As a player, I want to unlock storylines by completing quests so that I can get a deeper experience of the storyline.                           | Given that I have completed a mission, When I click the “Finish” button, Then a new story segment should be displayed.                               |
@@ -407,7 +408,12 @@ To evaluate the statistical significance of subjective differences between game 
 
 <div align="center">
 
-### Statistical Analysis: Wilcoxon Signed-Rank Tests
+
+</div>
+<div align="center">
+    <br>
+  <em>Table 4:Statistical Analysis: Wilcoxon Signed-Rank Tests </em>
+</div>
 
 <table>
   <thead>
@@ -510,7 +516,7 @@ From the early stages of development, we committed to sustainability and inclusi
 </div>
 <div align="center">
     <br>
-  <em>Table 4:Environment Optimization Strategies for Client Performance and Resource Efficiency </em>
+  <em>Table 5:Environment Optimization Strategies for Client Performance and Resource Efficiency </em>
 </div>
 
 | Initiative                   | Implementation                                                | Code Reference                              |
@@ -526,7 +532,7 @@ From the early stages of development, we committed to sustainability and inclusi
 </div>
 <div align="center">
     <br>
-  <em>Table 5:our Implementation for Accessibility </em>
+  <em>Table 6:our Implementation for Accessibility </em>
 </div>
 
 | Feature                    | Implementation                                                                | Code Reference                            |
@@ -548,7 +554,7 @@ Our accessibility framework follows WCAG 2.1 AA standards and embraces the “tw
 </div>
 <div align="center">
     <br>
-  <em>Table 6:the Implementation for Sustainable and Maintainability </em>
+  <em>Table 7:the Implementation for Sustainable and Maintainability </em>
 </div>
 
 | Practice                 | Implementation                                      | Code Reference                                     |
@@ -563,7 +569,7 @@ Our accessibility framework follows WCAG 2.1 AA standards and embraces the “tw
 </div>
 <div align="center">
     <br>
-  <em>Table 7: Sustainable Metrics </em>
+  <em>Table 8: Sustainable Metrics </em>
 </div>
 
 | Category        | Improvement                            | Verification Method                        |
