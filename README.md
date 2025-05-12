@@ -390,7 +390,10 @@ Due to our game’s visual and interactive nature, black-box testing was more ef
 
 Each developer used a Git feature branch, and new content was tested in isolation before merging. Weekly sprints included regular play sessions, ensuring consistent quality and stability.
 
+# 7. Process
 
+
+# 8. Conclusion
 
 ## Level Design
 
