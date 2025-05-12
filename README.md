@@ -11,12 +11,13 @@
   <a href="https://youtu.be/9Rv5dqSU8yw" target="_blank" rel="noopener">
     <img
       src="https://raw.githubusercontent.com/UoB-COMSM0166/2025-group-1/main/picture/demo-video.png"
-      width="1000"
+      width="300"
       alt="Watch Our Video!"
     >
+    <p><strong>🎥&nbsp;&nbsp;Demo Video&nbsp;&nbsp;🎥</strong></p>
   </a>
-  <p><strong>🎥&nbsp;&nbsp;&nbsp;&nbsp;Demo Video&nbsp;&nbsp;&nbsp;&nbsp;🎥</strong></p>
 </div>
+
 
 
 # 📚 Table of Contents
