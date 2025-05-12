@@ -513,13 +513,39 @@ Before each meeting, our product manager, Fufu, would inform the group of the ag
   <em>Figure: WhatsApp group message snippet</em>
 </p>
 
-
 To manage our workflow and ensure transparency, we used a Kanban board to track task progress. Each task was clearly defined and assigned, allowing us to visualize the overall status of the project at a glance. This tool helped us remain organized and responsive to any bottlenecks that emerged during development.
 
+In addition, we made extensive use of GitHub’s Pull Request (PR) functionality for version control and collaborative coding. It became our standard practice to create a new branch for each assigned task. After completing a task, a team member would submit a pull request, which another member was required to review before merging. This peer-review process not only maintained high coding standards but also allowed us to catch potential bugs early. Even if problematic code was merged, the branch structure made it easy to trace issues back to specific tasks.
 
+As the core features of the game were implemented, we began inviting users to test our product regularly. The feedback we received significantly accelerated our iteration cycles and led to several changes in product requirements. Every team member responded proactively to these changes and willingly took on the task of fixing the bugs that naturally emerged during rapid iterations.
 
+One of the biggest challenges we faced was implementing the enemy AI tracking system. It took us three weeks to complete, one week longer than originally planned. During this time, we held six meetings focused solely on this feature, brainstorming various solutions. The first two weeks yielded no significant breakthroughs, which was frustrating for the team. To gain fresh perspectives, we posted in developer forums and received a wide range of suggestions. One of these eventually led us in the right direction, and we implemented the tracking system much faster than expected once we found the right approach.
 
+**Add Animation 7 !!**
 
+In addition to gameplay mechanics, our team prioritized inclusive design. We developed an accessibility mode specifically tailored for colorblind and one-handed players. This required a great deal of additional effort. To ensure our design truly improved the player experience, we arranged a coffee chat with the head of the Disability and Wellbeing organization. Their insights offered perspectives we had not previously considered and deeply informed our design choices.
+
+**无障碍图片1没显示！**
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7bddbe76-4e34-4275-b9ed-b1bc45cba938" 
+       alt="Initial Contact Email" 
+       width="300" />
+  <br>
+  <em>Figure: Initial contact email</em>
+</p>
+
+**无障碍图片2没显示！**
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4661f9a4-76d6-48d5-a8e0-0129e315c94c" 
+       alt="Reply from Tristan" 
+       width="300" />
+  <br>
+  <em>Figure: Tristan's reply email</em>
+</p>
+
+This system of regular meetings, clearly defined roles, structured communication, user feedback, and disciplined code management created a productive and cohesive working environment. Through effective collaboration, user engagement, and inclusive practices, we were able to deliver a high-quality game while continuously learning and adapting as a team.
 
 
 # 10. Conclusion
