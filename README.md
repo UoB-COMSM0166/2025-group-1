@@ -121,10 +121,21 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 # 4. Design
 
 ## Class diagrams
+The class diagram organizes the system into auxiliary modules (including UI design, music arrangement, accessibility features, and menu design), enemies, bullets, and trap setups.
+Design highlights include:
+**Inheritance for reuse**
+The three-tier abstraction of Entity → Enemy → Bullet ensures core movement, collision, and rendering logic is implemented only once.
+**Single responsibility**
+Each Manager/System focuses on one function, while Main is solely responsible for orchestrating the overall game flow.
+**Modular interfaces**
+Level elements, entities, and systems are decoupled via clear interfaces (update(), display(), checkCollision()), making it easy to add or replace components.
+**Event-driven awareness**
+Components like Portal and Switch notify Main through boolean returns or callbacks, enabling loosely coupled level control.
 ![Class diagram](https://github.com/user-attachments/assets/df0f4ff7-4c1d-40d7-b117-bf6671d02dfb)
 
 
 ## Sequence Diagrams
+The sequence diagram below illustrates that players can adjust settings or view instructions and then return after clicks “Start” on the main menu. Next, they proceed through mode selection and level selection into a story cutscene. From there they enter the main game loop—each frame executes, in order: enemy updates, player input processing, item/trap detection, and bullet collision checks—until either the victory or game-over screen appears, at which point the player can press a key to retry or continue with the next part of the story.
 ![Sequence Diagram](https://github.com/user-attachments/assets/10c5c9d7-856f-4b09-b39e-35385a545b16)
 
 
@@ -187,7 +198,7 @@ To handle overlapping sound triggers, we implemented a priority system. Each sou
 
 This **behavior tree–driven approach** allows for modular logic and scalable control. All transitions—whether from idle to combat, or from event SFX to ambient background—are managed through a consistent and flexible structure. The result is a polished audio system that delivers **fluid, immersive, and emotionally responsive** feedback throughout the player’s experience.
 
-**Add Animation 4 !!**
+
 ![Animation](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation4.gif)
 
 
