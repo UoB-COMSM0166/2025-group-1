@@ -123,15 +123,23 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 ## Class diagrams
 The class diagram organizes the system into auxiliary modules (including UI design, music arrangement, accessibility features, and menu design), enemies, bullets, and trap setups.
 Design highlights include:
+
 **Inheritance for reuse**
+
 The three-tier abstraction of Entity → Enemy → Bullet ensures core movement, collision, and rendering logic is implemented only once.
+
 **Single responsibility**
+
 Each Manager/System focuses on one function, while Main is solely responsible for orchestrating the overall game flow.
+
 **Modular interfaces**
+
 Level elements, entities, and systems are decoupled via clear interfaces (update(), display(), checkCollision()), making it easy to add or replace components.
+
 **Event-driven awareness**
+
 Components like Portal and Switch notify Main through boolean returns or callbacks, enabling loosely coupled level control.
-![Class diagram](https://github.com/user-attachments/assets/df0f4ff7-4c1d-40d7-b117-bf6671d02dfb)
+![Class diagram](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/class%20diagram.png)
 
 
 ## Sequence Diagrams
@@ -219,12 +227,25 @@ To clearly present our findings, we extracted a sample observation record from o
 | 01:12      | Anxious, frowning, fidgety      | I'm claustrophobic and this partial light mode makes me feel depressed. Is there no full light mode?  | Operate the game character to pace the game repeatedly                                          | User Comfort & Accessibility     |
 | ...       | ...                              | ...                                                                                                    | ...                                                                                              | ...                              |
 
-**Add Animation 5 !!**
+<p align="center">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation5.gif"
+       alt="Animation"
+       width="300" />
+  <br>
+  <em>Figure: participants share their thoughts, feelings, and actions </em>
+</p>
+
 ![Animation](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation5.gif)
 
 After the meeting, we collated the observation records and divided the feedback into four categories: Usability & Interaction Issues, Visual & Informational Design, Accessibility & User Well-being, and Positive Feedback for optimisation.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6a7dd874-99d6-4ec0-930e-181af343ce03"
+       alt="Animation"
+       />
+  <br>
+  <em>Figure: four categories of feedback</em>
+</p>
 
-![image](https://github.com/user-attachments/assets/6a7dd874-99d6-4ec0-930e-181af343ce03)
 
 ### Analysis and Optimisation
 
@@ -422,6 +443,8 @@ From the early stages of development, we committed to sustainability and inclusi
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6f824b9a-3f78-4709-a3c3-9a5114564306" alt="可持续1" width="400"/>
+    <br>
+  <em>Figure: sustainability framework for game development</em>
 </p>
 
 ## Environmental Impact
@@ -526,6 +549,8 @@ We held two regular meetings each week: one online meeting every Saturday via Mi
 
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation6.gif" alt="Animation" width="300">
+    <br>
+  <em>Figure: in-person meeting on Tuesday</em>
 </div>
 
 Before each meeting, our product manager, Fufu, would inform the group of the agenda and time through a WhatsApp group chat. After the meeting, Fufu would summarize the key decisions and distribute updated task assignments accordingly. This structured communication kept everyone informed and aligned.
@@ -560,7 +585,7 @@ In addition to gameplay mechanics, our team prioritized inclusive design. We dev
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/access1.png" 
        alt="Initial Contact Email" 
-       width="300" />
+       width="600" />
   <br>
   <em>Figure: Initial contact email</em>
 </p>
@@ -570,7 +595,7 @@ In addition to gameplay mechanics, our team prioritized inclusive design. We dev
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/picture/access2.png" 
        alt="Reply from Tristan" 
-       width="300" />
+       width="600" />
   <br>
   <em>Figure: Tristan's reply email</em>
 </p>
