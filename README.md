@@ -168,7 +168,9 @@ Components like Portal and Switch notify Main through boolean returns or callbac
 </p>
 
 ## Sequence Diagrams
+
 The sequence diagram below illustrates that players can adjust settings or view instructions and then return after clicks “Start” on the main menu. Next, they proceed through mode selection and level selection into a story cutscene. From there they enter the main game loop—each frame executes, in order: enemy updates, player input processing, item/trap detection, and bullet collision checks—until either the victory or game-over screen appears, at which point the player can press a key to retry or continue with the next part of the story.
+
 
 ![Sequence Diagram](https://github.com/user-attachments/assets/10c5c9d7-856f-4b09-b39e-35385a545b16)
 
@@ -344,14 +346,14 @@ Figure shows that players reported significantly higher frustration in the Explo
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/15a67a36-fb4d-4464-bc92-5a6e4ece82a9" width="400"/>
-  <p><em>Figure: Average Frustration Score by Mode</em></p>
+  <p><em>Figure10: Average Frustration Score by Mode</em></p>
 </div>
 
 Figure further reveals that the frustration scores in the Exploration Mode are not only higher on average, but also more variable, with several participants reporting very high values.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/adfef191-976c-44d8-8517-b25f1b168c8c" width="400"/>
-  <p><em>Figure: Distribution of Frustration Scores by Mode</em></p>
+  <p><em>Figure11: Distribution of Frustration Scores by Mode</em></p>
 </div>
 
 These results suggest that while Exploration Mode adds challenge, it also increases emotional stress and uncertainty.
@@ -361,14 +363,14 @@ Figure shows a reverse trend in perceived performance: the average score decreas
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/301b92cd-b9ca-433a-8cb8-5a19b30bdc1f" width="400"/>
-  <p><em>Figure10: Average Performance Score by Mode</em></p>
+  <p><em>Figure12: Average Performance Score by Mode</em></p>
 </div>
 
 Figure  confirms this drop in user-reported success, with more low and mid-range scores under the Exploration condition.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/5ca20c1c-bbf5-4897-bf7e-ebcb58d5360c" width="400"/>
-  <p><em>Figure11: Distribution of Performance Scores by Mode</em></p>
+  <p><em>Figure13: Distribution of Performance Scores by Mode</em></p>
 </div>
 
 These results validate the hypothesis that the Exploration Mode leads to **higher frustration** and **lower perceived success**, indicating potential usability or pacing issues in its current form.
@@ -483,7 +485,7 @@ From the early stages of development, we committed to sustainability and inclusi
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6f824b9a-3f78-4709-a3c3-9a5114564306" alt="可持续1" width="600"/>
     <br>
-  <em>Figure12: sustainability framework for game development</em>
+  <em>Figure14: sustainability framework for game development</em>
 </p>
 
 ## Environmental Impact
@@ -581,7 +583,7 @@ We held two regular meetings each week: one online meeting every Saturday via Mi
 <p align="center">
   <img width="1091" alt="Product Requirements Table" src="https://github.com/user-attachments/assets/826ac3b0-f747-4dcd-bd8c-f0758b9df6d0" />
   <br>
-  <em>Figure13: First draft of the product requirements table</em>
+  <em>Figure15: First draft of the product requirements table</em>
 </p>
 
 
@@ -589,7 +591,7 @@ We held two regular meetings each week: one online meeting every Saturday via Mi
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation6.gif" alt="Animation" width="450">
     <br>
-  <em>Figure14: in-person meeting on Tuesday</em>
+  <em>Figure16: in-person meeting on Tuesday</em>
 </div>
 
 Before each meeting, our product manager, Fufu, would inform the group of the agenda and time through a WhatsApp group chat. After the meeting, Fufu would summarize the key decisions and distribute updated task assignments accordingly. This structured communication kept everyone informed and aligned.
@@ -599,7 +601,7 @@ Before each meeting, our product manager, Fufu, would inform the group of the ag
        alt="WhatsApp group message snippet"
        width="300" />
   <br>
-  <em>Figure15: WhatsApp group message snippet</em>
+  <em>Figure17: WhatsApp group message snippet</em>
 </p>
 
 To manage our workflow and ensure transparency, we used a Kanban board to track task progress. Each task was clearly defined and assigned, allowing us to visualize the overall status of the project at a glance. This tool helped us remain organized and responsive to any bottlenecks that emerged during development.
@@ -613,7 +615,7 @@ One of the biggest challenges we faced was implementing the enemy AI tracking sy
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation7.gif" alt="Animation" width="400">
   <br>
-  <em>Figure16: Discuss about the enemy AI tracking system</em>
+  <em>Figure18: Discuss about the enemy AI tracking system</em>
 </p>
 
 
@@ -626,7 +628,7 @@ In addition to gameplay mechanics, our team prioritized inclusive design. We dev
        alt="Initial Contact Email" 
        width="600" />
   <br>
-  <em>Figure17: Initial contact email</em>
+  <em>Figure19: Initial contact email</em>
 </p>
 
 
