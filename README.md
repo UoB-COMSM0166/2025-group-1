@@ -101,12 +101,12 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif" alt="Animation" width="500">
     <br>
-  <em>Figure:Normal levels for paper models </em>
+  <em>Figure1:Normal levels for paper models </em>
 </div>
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation2.gif" alt="Animation" width="500">
     <br>
-  <em>Figure:The ultimate level of paper modelling </em>
+  <em>Figure2:The ultimate level of paper modelling </em>
 </div>
 
 
