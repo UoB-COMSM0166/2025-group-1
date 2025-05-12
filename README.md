@@ -84,17 +84,16 @@ In the early stage of development, we created a paper prototype to visualize and
 Additionally, it gave us an early opportunity to test accessibility features, such as simulating single-arm play and evaluating rule clarity, ensuring inclusivity from the very beginning. Overall, the paper prototype provided clear development direction and significantly improved our workflow efficiency.
 
 ![image](https://github.com/user-attachments/assets/72a081df-44c3-417c-a2c5-2de8ade477df) 
-![Animation](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif)
-![Animation](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation2.gif)
+
+<div align="center">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif" alt="Animation" width="300">
+</div>
+<div align="center">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation.gif" alt="Animation" width="300">
+</div>
 
 
-**Add Animation 1 !!**
 
-**Add Animation 2 !!**
-
-
-
- 
 ## User stories
 
 | Stakeholder               | Epic                                                  | User Story                                                                                                                                         | Acceptance Criteria                                                                                                                                   |
@@ -530,6 +529,10 @@ One of the biggest challenges we faced was implementing the enemy AI tracking sy
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation7.gif" alt="Animation" width="300">
 </div>
+  <br>
+  <em>Figure: Discuss about the enemy AI tracking system</em>
+</p>
+
 
 In addition to gameplay mechanics, our team prioritized inclusive design. We developed an accessibility mode specifically tailored for colorblind and one-handed players. This required a great deal of additional effort. To ensure our design truly improved the player experience, we arranged a coffee chat with the head of the Disability and Wellbeing organization. Their insights offered perspectives we had not previously considered and deeply informed our design choices.
 
