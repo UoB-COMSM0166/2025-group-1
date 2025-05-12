@@ -183,7 +183,7 @@ In the main update loop, collision tests and distance calculations drive state t
 
 
 <p align="center">
-  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation3" alt="Animation" width="500">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation3.gif" alt="Animation" width="500">
   <br>
   <em>Figure: Enemy AI Tracking </em>
 </p>
@@ -213,7 +213,7 @@ This **behavior tree–driven approach** allows for modular logic and scalable c
 
 
 <p align="center">
-  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation4" alt="Animation" width="500">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation4.gif" alt="Animation" width="500">
   <br>
   <em>Figure: Intelligent Audio Switching System </em>
 </p>
@@ -612,6 +612,20 @@ This system of regular meetings, clearly defined roles, structured communication
 
 
 # 10. Conclusion
+
+RIFT is a game inspired by the roguelike platformer Spelunky, but reimagined with a unique narrative backdrop, innovative mechanics, and puzzle-solving elements. Over the course of five months, our team of six members collaboratively developed this game from the ground up—an undertaking that proved both challenging and rewarding.
+
+Coming from diverse academic backgrounds, each member brought a different skillset to the team. Early on, we assigned roles based on individual strengths, allowing everyone to contribute meaningfully. From programming and art to design and sound, each member demonstrated commitment and professionalism in pushing the project forward.
+
+Throughout development, we followed an agile workflow. We held two meetings each week to monitor progress, troubleshoot technical issues, reflect on team performance, and plan upcoming sprints. These meetings also provided a space to adapt our task priorities and requirements based on user feedback. Agile collaboration and open communication played a pivotal role in keeping our project on track.
+
+Looking back, we are proud to say that our final product closely reflects our initial vision—and in some areas, even surpassed expectations. Beyond technical achievement, one of our most valuable takeaways was the experience of cross-disciplinary teamwork. We learned to communicate efficiently, adapt to different working styles, and maintain alignment despite a fast-paced iteration cycle. These skills will be indispensable in our future careers.
+
+That said, there are still many ideas we had hoped to implement but could not due to time or technical constraints. While we aimed to incorporate inclusive design from the outset, the current accessibility mode is better suited for players with a left arm only. We struggled to involve enough one-armed testers, which limited the inclusivity evaluation. Additionally, features like procedurally generated levels, multiplayer mode, and richer storytelling could significantly enhance the experience and immersion.
+
+Looking forward, we hope to continue optimizing RIFT and eventually publish it on mobile platforms. We also plan to create RIFT merchandise, such as T-shirts, to grow our fanbase and community. This project has laid a strong foundation—not just for the game itself, but for the shared values, trust, and creativity of our team.
+
+This project was more than a technical endeavor—it was a journey of collaboration, creativity, and growth. Though RIFT is still evolving, we are proud of how far we've come and excited for what lies ahead.
 
 
 
