@@ -120,7 +120,7 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 </div>
 <div align="center">
 
-    <br>
+  
   <em>Table 2:User Stories for Different Stakeholders </em>
 </div>
 
