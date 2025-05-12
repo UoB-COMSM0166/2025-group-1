@@ -233,7 +233,7 @@ We identified and addressed key issues from three categories:
 - Some players felt discomfort with partial lighting, while others enjoyed it  
 
 **Solution:**  
-- Added toggle between “Full Light Mode” and “Exploration Mode”  
+- Added toggle between “Full Light Mode” and “Exploration Mode”
 
 This method provided strong support for understanding users’ cognitive processes and emotional journeys, contributing effectively to the iterative improvement of our game design.
 
