@@ -19,6 +19,7 @@
 8. [Privacy](#8-privacy)
 9. [Process](#9-process)
 10. [Conclusion](#10-conclusion)
+11. [Contribution Statement](#11-contribution statement)
 
 
 
