@@ -463,7 +463,6 @@ Our accessibility framework follows WCAG 2.1 AA standards and embraces the “tw
 
 - Future Expansion: Plans include screen reader support, speech controls, and audio cues for blind users.
 
-
 # 8. Privacy
 
 # 9. Process
