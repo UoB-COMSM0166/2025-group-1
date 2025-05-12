@@ -85,18 +85,18 @@ Additionally, it gave us an early opportunity to test accessibility features, su
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/72a081df-44c3-417c-a2c5-2de8ade477df" alt="Animation" width="400">
+  <img src="https://github.com/user-attachments/assets/72a081df-44c3-417c-a2c5-2de8ade477df" alt="Animation" width="500">
   <br>
   <em>Figure: paper prototype for simulation</em>
 </p>
 
 <div align="center">
-  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif" alt="Animation" width="400">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif" alt="Animation" width="500">
     <br>
   <em>Figure: </em>
 </div>
 <div align="center">
-  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation2.gif" alt="Animation" width="400">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation2.gif" alt="Animation" width="500">
     <br>
   <em>Figure: </em>
 </div>
@@ -182,7 +182,11 @@ In most 2D platformers, an FSM-based logic sequence (“player on platform → c
 In the main update loop, collision tests and distance calculations drive state transitions. We toggle the enemy’s speed variable between patrolSpeed and attackSpeed, and enforce platform boundaries by reversing direction at edges. This FSM-driven approach reduces collision and boundary-detection errors, ensuring enemies remain reliable threats that enhance gameplay without sacrificing stability or maintainability. Overall, this FSM pattern balances complexity and functionality, giving designers clear hooks for future tweaks.
 
 
-![Animation](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation3.gif)
+<p align="center">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation3" alt="Animation" width="500">
+  <br>
+  <em>Figure: Enemy AI Tracking </em>
+</p>
 
 ## Challenge 2: Intelligent Audio Switching System
 
@@ -207,7 +211,12 @@ To handle overlapping sound triggers, we implemented a priority system. Each sou
 This **behavior tree–driven approach** allows for modular logic and scalable control. All transitions—whether from idle to combat, or from event SFX to ambient background—are managed through a consistent and flexible structure. The result is a polished audio system that delivers **fluid, immersive, and emotionally responsive** feedback throughout the player’s experience.
 
 
-![Animation](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation4.gif)
+
+<p align="center">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation4" alt="Animation" width="500">
+  <br>
+  <em>Figure: Intelligent Audio Switching System </em>
+</p>
 
 
 # 6. Evaluation
@@ -230,12 +239,11 @@ To clearly present our findings, we extracted a sample observation record from o
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation5.gif"
        alt="Animation"
-       width="300" />
+       width="500" />
   <br>
   <em>Figure: participants share their thoughts, feelings, and actions </em>
 </p>
 
-![Animation](https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation5.gif)
 
 After the meeting, we collated the observation records and divided the feedback into four categories: Usability & Interaction Issues, Visual & Informational Design, Accessibility & User Well-being, and Positive Feedback for optimisation.
 <p align="center">
