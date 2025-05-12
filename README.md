@@ -199,6 +199,8 @@ To clearly present our findings, we extracted a sample observation record from o
 | 01:12      | Anxious, frowning, fidgety      | I'm claustrophobic and this partial light mode makes me feel depressed. Is there no full light mode?  | Operate the game character to pace the game repeatedly                                          | User Comfort & Accessibility     |
 | ...       | ...                              | ...                                                                                                    | ...                                                                                              | ...                              |
 
+**Add Animation 5 !!**
+
 After the meeting, we collated the observation records and divided the feedback into four categories: Usability & Interaction Issues, Visual & Informational Design, Accessibility & User Well-being, and Positive Feedback for optimisation.
 
 ![image](https://github.com/user-attachments/assets/6a7dd874-99d6-4ec0-930e-181af343ce03)
