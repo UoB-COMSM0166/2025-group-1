@@ -9,17 +9,17 @@
 
 # Table of Contents
 
-- [1. Development Team](#1-development-team)
-- [2. Introduction](#2-introduction)
-- [3. Requirements](#3-requirements)
-- [4. Design](#4-design)
-- [5. Implementation](#5-implementation)
-- [6. Evaluation](#6-evaluation)
-- [7. Sustainability, Ethics & Accessibility](#7-sustainability-ethics--accessibility)
-- [8. Privacy](#8-privacy)
-- [9. Process](#9-process)
-- [10. Conclusion](#10-conclusion)
-- [11. References](#11-references)
+[1. Development Team](#1-development-team)
+[2. Introduction](#2-introduction)
+[3. Requirements](#3-requirements)
+[4. Design](#4-design)
+[5. Implementation](#5-implementation)
+[6. Evaluation](#6-evaluation)
+[7. Sustainability, Ethics & Accessibility](#7-sustainability-ethics--accessibility)
+[8. Privacy](#8-privacy)
+[9. Process](#9-process)
+[10. Conclusion](#10-conclusion)
+[11. References](#11-references)
 
 
 
