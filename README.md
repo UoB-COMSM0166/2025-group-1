@@ -450,7 +450,7 @@ Each developer used a Git feature branch, and new content was tested in isolatio
 From the early stages of development, we committed to sustainability and inclusivity as core design principles, and applying a sustainable development awareness framework to it. By setting the default screen brightness to 50%, we balance visual quality with reduced energy consumption. All design choices reflect a philosophy of energy efficiency and inclusive gameplay, ensuring smooth experiences for players of diverse abilities.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6f824b9a-3f78-4709-a3c3-9a5114564306" alt="可持续1" width="400"/>
+  <img src="https://github.com/user-attachments/assets/6f824b9a-3f78-4709-a3c3-9a5114564306" alt="可持续1" width="600"/>
     <br>
   <em>Figure: sustainability framework for game development</em>
 </p>
@@ -556,7 +556,7 @@ We held two regular meetings each week: one online meeting every Saturday via Mi
 
 
 <div align="center">
-  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation6.gif" alt="Animation" width="300">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation6.gif" alt="Animation" width="600">
     <br>
   <em>Figure: in-person meeting on Tuesday</em>
 </div>
