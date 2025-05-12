@@ -638,7 +638,7 @@ In addition to gameplay mechanics, our team prioritized inclusive design. We dev
        alt="Reply from Tristan" 
        width="600" />
   <br>
-  <em>Figure18: Tristan's reply email</em>
+  <em>Figure20: Tristan's reply email</em>
 </p>
 
 This system of regular meetings, clearly defined roles, structured communication, user feedback, and disciplined code management created a productive and cohesive working environment. Through effective collaboration, user engagement, and inclusive practices, we were able to deliver a high-quality game while continuously learning and adapting as a team.
