@@ -89,7 +89,7 @@ Additionally, it gave us an early opportunity to test accessibility features, su
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif" alt="Animation" width="300">
 </div>
 <div align="center">
-  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation.gif" alt="Animation" width="300">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation2.gif" alt="Animation" width="300">
 </div>
 
 
@@ -526,9 +526,9 @@ As the core features of the game were implemented, we began inviting users to te
 
 One of the biggest challenges we faced was implementing the enemy AI tracking system. It took us three weeks to complete, one week longer than originally planned. During this time, we held six meetings focused solely on this feature, brainstorming various solutions. The first two weeks yielded no significant breakthroughs, which was frustrating for the team. To gain fresh perspectives, we posted in developer forums and received a wide range of suggestions. One of these eventually led us in the right direction, and we implemented the tracking system much faster than expected once we found the right approach.
 
-<div align="center">
+<p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation7.gif" alt="Animation" width="300">
-</div>
+
   <br>
   <em>Figure: Discuss about the enemy AI tracking system</em>
 </p>
