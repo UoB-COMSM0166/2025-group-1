@@ -30,12 +30,12 @@
 
 | MEMBER | NAME           | EMAIL                        | ROLE |
 |--------|---------------|------------------------------|------|
-| 1      | Peiru Li      | xb24597@bristol.ac.uk        |      |
-| 2      | Qingya Fu     | zn24533@bristol.ac.uk        |      |
-| 3      | Songying Li   | fm24830@bristol.ac.uk        |      |
-| 4      | Jiaduo Gu     | wi24623@bristol.ac.uk        |      |
-| 5      | Hanqi Wu      | to24657@bristol.ac.uk        |      |
-| 6      | Hanzhen Guo   | om24630@bristol.ac.uk        |      |
+| 1      | Peiru Li      | xb24597@bristol.ac.uk        |   Technical Game Developer   |
+| 2      | Qingya Fu     | zn24533@bristol.ac.uk        |    Product Manager and Game Designer  |
+| 3      | Songying Li   | fm24830@bristol.ac.uk        |  Game Developer and Designer    |
+| 4      | Jiaduo Gu     | wi24623@bristol.ac.uk        |   Game Narrative Designer  |
+| 5      | Hanqi Wu      | to24657@bristol.ac.uk        |   Systems Engineer   |
+| 6      | Hanzhen Guo   | om24630@bristol.ac.uk        |     UI/UX Designer  |
 
 
 # 2. Introduction
@@ -84,21 +84,15 @@ In the early stage of development, we created a paper prototype to visualize and
 Additionally, it gave us an early opportunity to test accessibility features, such as simulating single-arm play and evaluating rule clarity, ensuring inclusivity from the very beginning. Overall, the paper prototype provided clear development direction and significantly improved our workflow efficiency.
 
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/72a081df-44c3-417c-a2c5-2de8ade477df" alt="Animation" width="500">
-  <br>
-  <em>Figure: paper prototype for simulation</em>
-</p>
-
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation1.gif" alt="Animation" width="500">
     <br>
-  <em>Figure: </em>
+  <em>Figure:Normal levels for paper models< </em>
 </div>
 <div align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation2.gif" alt="Animation" width="500">
     <br>
-  <em>Figure: </em>
+  <em>Figure:The ultimate level of paper modelling </em>
 </div>
 
 
@@ -185,7 +179,7 @@ In the main update loop, collision tests and distance calculations drive state t
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation3.gif" alt="Animation" width="500">
   <br>
-  <em>Figure: Enemy AI Tracking </em>
+  <em>Figure: The player enters the platform where the monster is located< </em>
 </p>
 
 ## Challenge 2: Intelligent Audio Switching System
@@ -215,7 +209,7 @@ This **behavior tree–driven approach** allows for modular logic and scalable c
 <p align="center">
   <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation4.gif" alt="Animation" width="500">
   <br>
-  <em>Figure: Intelligent Audio Switching System </em>
+  <em>Figure: Sound effect switch when the player has only one drop of blood left </em>
 </p>
 
 
@@ -241,7 +235,7 @@ To clearly present our findings, we extracted a sample observation record from o
        alt="Animation"
        width="500" />
   <br>
-  <em>Figure: participants share their thoughts, feelings, and actions </em>
+  <em>Figure: Gamers use think aloud method to test gameplay fragment </em>
 </p>
 
 
@@ -556,7 +550,7 @@ We held two regular meetings each week: one online meeting every Saturday via Mi
 
 
 <div align="center">
-  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation6.gif" alt="Animation" width="600">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation6.gif" alt="Animation" width="450">
     <br>
   <em>Figure: in-person meeting on Tuesday</em>
 </div>
@@ -580,7 +574,7 @@ As the core features of the game were implemented, we began inviting users to te
 One of the biggest challenges we faced was implementing the enemy AI tracking system. It took us three weeks to complete, one week longer than originally planned. During this time, we held six meetings focused solely on this feature, brainstorming various solutions. The first two weeks yielded no significant breakthroughs, which was frustrating for the team. To gain fresh perspectives, we posted in developer forums and received a wide range of suggestions. One of these eventually led us in the right direction, and we implemented the tracking system much faster than expected once we found the right approach.
 
 <p align="center">
-  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation7.gif" alt="Animation" width="300">
+  <img src="https://github.com/UoB-COMSM0166/2025-group-1/blob/main/Animation/Animation7.gif" alt="Animation" width="400">
   <br>
   <em>Figure: Discuss about the enemy AI tracking system</em>
 </p>
@@ -627,5 +621,14 @@ Looking forward, we hope to continue optimizing RIFT and eventually publish it o
 
 This project was more than a technical endeavor—it was a journey of collaboration, creativity, and growth. Though RIFT is still evolving, we are proud of how far we've come and excited for what lies ahead.
 
+# 11. Contribution Statement
+| Name     |   Contribution   | 
+|-------------------|----------------|
+|Qingya Fu    | 1.00 |
+| Songying Li | 1.00 | 
+| Hanzhen Guo | 1.00 | 
+| Hanqi Wu    |1.00  | 
+| Peiru Li    |1.00  |
+|Jiaduo Gu    | 1.00|
 
 
