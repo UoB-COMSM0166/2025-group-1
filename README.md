@@ -11,7 +11,7 @@
   <a href="https://youtu.be/9Rv5dqSU8yw" target="_blank" rel="noopener">
     <img
       src="https://raw.githubusercontent.com/UoB-COMSM0166/2025-group-1/main/picture/demo-video.png"
-      width="300"
+      width="1000"
       alt="Watch Our Video!"
     >
   </a>
