@@ -16,6 +16,7 @@ let settings = {
   fontWeightBold: false  // Bold font setting
 }
 
+
 let bgImage;
 let storyImage1, storyImage2, storyImage3, storyImage4, storyImage5;
 let currentStoryImage = 0;
